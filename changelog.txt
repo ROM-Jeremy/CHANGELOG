@@ -1,0 +1,155 @@
+====================
+     07-14-2015
+====================
+
+
+   * build/
+5905c27 Allow prebuilt apk files
+
+   * device/lge/w7/
+116ea8b Update OTA properties
+
+   * frameworks/webview/
+88e527c Oops, that snuck in there on me
+473b0f6 Update WebView from 43.0.2357.121 to 44.0.2403.83
+
+   * packages/apps/Eleven/
+39dc0b6 eleven: fix invalid srt formats
+
+   * packages/apps/KernelAdiutor/
+222112d Bump version to 0.9.6
+0e5eed1 Fix compile error
+12a75f1 Fix formatting
+fea4da2 Add support for LG G3
+d612221 Add transition animation in downloads
+040872a Don't online CPU to read out cpufreq
+a555544 NPE rekt me
+ea45792 version 0.9.6
+7939a66 Add Entropy settings
+c444d3c Add per core support for cpu boost input freq
+afa5429 version 0.9.5.1.1 beta
+d042a49 Fix background when dark theme is used
+64e86f1 Import Translations from crowdin
+0919253 Init.d: Add edit, delete and new options also new icons
+8e4946a Use HttpURLConnection to read websites
+933c15e Some FC fixes
+fee9acf FrequencyTable: Fix additional card and set permission for init.d
+184a5cf Fix derp on non big.LITTLE devices
+3036ae5 Fix derp
+683206e version 0.9.5.1 beta
+25b1ed4 Import translations from crowdin
+8d7374b Add big.LITTLE support
+86bb95c Some clean up
+edc08d6 Boot/Recovery path of HMP exynos devices
+efd8353 Add some copyright notes in CpuSpy
+09a7563 Fix formating in JSON files
+9b9ada4 Add big.LITTLE support in frequency table
+1d6295c Fix governor tunables on HMP exynos devices
+a76df45 Make sure we read the right cpu temp file
+9436279 fix derp
+64f17e3 add support for android one and oneplus one
+182552c Create sprout.json
+d869a02 Create oneplusone.json
+f7c625d Create nexus5.json
+ef9f1bf Add support for nexus 5
+27196b8 Import translations from crowdin Add a link to download wiki in README
+c62b2ed version 0.9.5
+d6b1b83 Add extra_free_kbytes
+22aba0e DT2W for Nexus 9
+21615df Format celsius properly
+f7697ec Add custom downloads.json support and minor bug fixes
+65ca6e5 Introducing Kernel downloader An option to download third party kernels from developers. This works with JSON files. Kernel developers have to maintain their JSON database and keep them up to date. I will write up a documentation, so people can easily add support for their kernel.
+
+   * packages/apps/Settings/
+3fa2b9a Derp
+
+   * vendor/slim/
+c3b128a Bring in prebuilts
+5ca69eb Remove CMFileManager
+
+====================
+     07-13-2015
+====================
+
+
+   * build/
+f8ee153 Merge pull request #1 from SlimRoms/lp5.1
+
+   * frameworks/base/
+1d1a84c Lets round the corners of Recents windows a bit.
+e23fbee Clean up keyguard carrier text handling.
+204437b SystemUI: Show operator name UI after getting valid operator name
+48d1b26 DO NOT MERGE Don't take flags when creating app widget config activity.
+ee2b255 Make Bitmap_createFromParcel check the color count. DO NOT MERGE
+34d2ecc Do not paint shadow if outside of the clip area
+530563b Add Asset management support for fonts.
+9509918 Mark persistent apps as such when the ProcessRecord is created
+8079406 PowerManagerService: fix line to long after 64 bit compatibility changes
+fe509f3 PowerManagerService: Fix arm64 build
+5a5cef1 perf: Per-app performance profiles
+10ded4b Revert "Properly animate SIM PIN entry screen transition."
+
+   * packages/apps/Dialer/
+b383317 Layers 2.1 (backwards compatible)
+
+   * packages/apps/Eleven/
+0481caf Automatic translation import
+
+   * packages/apps/InCallUI/
+ee9d8ee Layers 2.1 (backwards compatible)
+
+   * packages/apps/Settings/
+6c9ea43 Slim : Stripped down performance profiles Settings from CM
+664cef6 Settings: change "doze" to "ambient display" to avoid confusion
+015e7c6 Add a 2 sec timeout for heads up notifications
+
+   * vendor/slim/
+b1fc3d6 Remove this for now
+bb28ea5 Add F-Droid/SoundRecorder/CMFileManager to build
+
+====================
+     07-12-2015
+====================
+
+
+   * device/lge/w7/
+e7b4fc4 We do not have a krait processor...lol
+
+   * platform_manifest/
+4c66c4e Manifest: Bump to r6
+
+====================
+     07-11-2015
+====================
+
+
+   * build/
+e5d3670 Revert "Add Chromium prebuilt and fixup device specific OUT dir [1/2]"
+3ac4bf6 Add PRODUCT_PACKAGES for Google's prebuilt WebView
+575815f "LMY48G"
+1047b2b "LMY48F"
+b728e1b "LMY48E"
+7d142e7 "LMY48D"
+c129b44 "LMY48C"
+c3b2b47 Really include drawables for all densities.
+
+   * frameworks/base/
+52a1f83 Add alternate WebView provider package
+
+   * packages/apps/Settings/
+8a983dd New Settings Logo!
+
+   * vendor/slim/
+5b536ee Revert "Add Chromium prebuilt and fixup device specific OUT dir [2/2]"
+
+====================
+     07-10-2015
+====================
+
+
+   * device/qcom/sepolicy/
+98d91d1 Seandroid: Add policy for dts configurator and notifier nodes
+
+   * vendor/slim/
+bba7884 Got a pound beside me right now...
+
