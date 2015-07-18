@@ -1,4 +1,105 @@
 ====================
+     07-18-2015
+====================
+
+
+   * build/
+ef3ecc0 build: avoid recovery patch if device setup can't do it correctly
+56d0d77 envsetup: repolastsync
+47db8db tools:releasetools:Use timestamp from build.prop while building system.img
+4f45f65 Let's make this look a little better
+
+   * frameworks/base/
+85735f5 livedisplay: Fix issue where settings weren't applied
+8d2c46b Revert CAF's default system sound settings
+33eef58 livedisplay: Round values up
+c3ce089 SystemUI: SlimDim - pref to listen on entire screen for touches [1/2]
+f95aa08 SlimDim: listen for touches in navbar empty areas also
+b5b90d0 SystemUI: SlimDim [1/2]
+ed2fbde Revert "SystemUI: SlimDim [1/2]"
+
+   * packages/apps/Settings/
+eed5d7b Display UberSlim version in settings
+e284027 settings: Fix livedisplay settings
+68459bd Fix config_proximityCheckOnWake setting handling
+6153bd2 Settings: SlimDim - pref to listen on entire screen for touches [2/2]
+dac176b Settings: SlimDim  [2/2]
+0b1adf1 Revert "Settings: SlimDim  [2/2]"
+689d43c Settings: add expanded desktop navbar action
+ac1ec7e Add button in "hidden" settings to flip "VoLTE Provisioned" flag
+
+   * packages/services/Telephony/
+bd1d7fa Merge "Fix missed calls notifications not shown after you call someone" into lp5.1
+
+   * vendor/slim/
+7350747 Merge pull request #1 from SlimRoms/lp5.1
+
+====================
+     07-17-2015
+====================
+
+
+   * build/
+8522873 Had to temporarily change ASCII art
+
+   * device/lge/w7/
+1ed4696 Enable proximity check on wake
+
+   * frameworks/base/
+7aaa821 Fix build
+6c18d9a Settings: Forward Port Volume Long Press Skip Tracks (1/2)
+
+   * packages/apps/Settings/
+077c6ac Settings: Forward Port Volume Long Press Skip Tracks (2/2)
+7ae12c2 Remove quick boot
+fe09774 Disable mobile plan under wireless networks aka more
+e6b387a Add fastscroll to the Manage applications screen
+f62628c Open app when clicking on icon in App Info screen
+333ed58 Remove taps to become a developer
+f1167f5 Let's enable developer options by default
+
+   * system/core/
+3dae6cf init: force SELinux to be permissive on all builds
+
+   * vendor/slim/
+0ce3bf9 Bump version
+
+====================
+     07-16-2015
+====================
+
+
+   * build/
+71e63e1 Add some art :-)
+
+   * device/lge/w7/
+91d2462 Add overlay for per-app performance profiles
+
+   * frameworks/base/
+cd05c61 SystemUI: SlimDim [1/2]
+
+   * packages/apps/Settings/
+d7539b4 Settings: SlimDim  [2/2]
+
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/
+e58e628 7-15-15
+
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8/
+507070a 7-15-15
+
+   * vendor/slim/
+9c1a428 Merge "Add titan" into lp5.1
+
+====================
+     07-15-2015
+====================
+
+
+   * system/extras/su/
+f854815 su: allow init to automatically restart daemon
+
+
+====================
      07-14-2015
 ====================
 
