@@ -1,7 +1,186 @@
 ====================
-     07-18-2015
+     07-22-2015
 ====================
 
+
+   * build/
+bf9704f Some more optimization
+b93b819 Merge branch 'lp5.1' of github.com:ROM-Jeremy/android_build-1 into HEAD
+fed590a Slim up sounds and update (2/2)
+7476ce7 Merge pull request #3 from akhilnarang/lp5.1
+
+   * device/lge/w7/
+6b0cc6c Enable dark theme in OTA app
+
+   * frameworks/base/
+9bbad53 Revert "Add one-click on/off to cellular QS tile"
+cf5d853 Add one-click on/off to cellular QS tile
+d027b58 Revert sucks at its job somtimes!
+e1b799b Revert "SystemUI: add visualizer to lock screen"
+1710bb2 Revert "SystemUI: allow lock screen visualizer to be disabled"
+089a3d4 Revert "keyguard: don't use eq visualized in LowEndGfx devices"
+d6f39dc Revert "SystemUI: disable visualizers during power save mode"
+8b939d8 Revert "Lockscreen visualizer: Disable out animation"
+d430a07 Revert "systemui: don't start-stop visualizer directly after a power save event"
+6f81bb1 Revert "SystemUI: move keyguard visualizer behind notifications"
+67dcd45 Revert "SystemUI: fix visualizer tile initial state"
+67221dc Revert "VisualizerTile: Fix compile error"
+dc413e3 Revert "SystemUI: improve visualier tile state management"
+022d74f Revert "SystemUI: visualizer state improvements"
+08bc96b Revert "SystemUI: workaround for visualizer flash on track change"
+7c36b51 Revert "VisualizerTile: Launch music player on long press"
+8c13849 Revert "SystemUI: be more event driven in keyguard visualizer"
+133e7d3 Revert "SystemUI: recalculate clock position on removing empty shade views"
+49201de Revert "SystemUI: don't launch visualizer before we are attached"
+
+   * packages/apps/AudioFX/
+4cefeb9 New Material icon
+
+   * packages/apps/Settings/
+6bcdb80 Revert "Intergrate Viper4Android into settings"
+d07355d Revert "Launch SuperSU from Settings"
+416e32d Revert "Fix that up"
+ca54697 Revert "Settings: allow lock screen visualizer to be disabled"
+
+====================
+     07-21-2015
+====================
+
+
+   * art/
+223a2e3 Revert "Avoid using dex cache array pointers in libart."
+
+   * build/
+7f1eb4b Merge tag 'android-5.1.1_r8' into HEAD
+dd17f56 Let's optimize this a little bit
+a2b2da0 How did that sneak in there? lol
+afdd7cc Create 0 compression ratio jar files
+8d19039 Remove "-g" globally
+50e2829 host: Allow more arch flexibility
+4442e50 clang: Introduce and guard some optimization flags
+
+   * frameworks/base/
+74c3e20 Let's add some art to initial boot dialog
+aa984f6 Revert "frameworks: add keyguard wallpaper functionality to WallpaperManager"
+e4ded87 Fix build
+6ba08c3 frameworks: add keyguard wallpaper functionality to WallpaperManager
+af1f3d1 SlimDim: Use semaphore to cancel ontouch callback
+
+   * frameworks/opt/telephony/
+1dc01d5 CdmaLteServiceStateTracker: allow forcing reading eri from xml
+e659516 Merge "Update GSM/CDMA getState API to consider state of the IMS phone as well." into lp5.1
+183efc4 Merge "Send SMS over 1x when on eHRPD/LTE and active voice call" into lp5.1
+f381725 Merge "Generate transaction Ids for RetrieveConf - This is required to be able to backup and restore received MMS" into lp5.1
+
+   * libcore/
+417ad09 Revert "Avoid using dex cache array pointers in libart."
+
+   * packages/apps/Dialer/
+0efe8b3 Merge pull request #1 from SlimRoms/lp5.1
+
+   * packages/apps/InCallUI/
+e8c289e Merge pull request #1 from SlimRoms/lp5.1
+
+   * packages/apps/Settings/
+d85bb66 Revert "SecuritySettings: Lockscreen wallpaper"
+59ebe6a Revert "Cleanup."
+83cb9f2 SecuritySettings: Lockscreen wallpaper
+
+   * prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9/
+c0371ef Update gold to build #2098274.
+
+   * vendor/slim/
+d1d25cd Merge branch 'lp5.1' of github.com:ROM-Jeremy/vendor_slim into HEAD
+a386661 Update Kernel Adiutor
+5f73b92 No longer needed
+4f55636 Add WallpaperPicker
+
+====================
+     07-20-2015
+====================
+
+
+   * build/
+0208d97 Revert "Don't warn on definition of possibly reserved identifiers."
+2536b17 Revert "Use -Wno-format-pedantic to disable overly aggressive format string warning."
+0ba457a Drop the support for camera2
+569384d tools:ota:don't mount system partition with recovery mount options
+6df8317 build: Changed Some Colors
+8188d92 Remove Email/Exchange
+d14c16a Use -Wno-format-pedantic to disable overly aggressive format string warning.
+6133678 Don't warn on definition of possibly reserved identifiers.
+6dfac97 UBER KEYS
+ab848a3 Remove MOAR Bloat
+f3e17d4 Remove 2nd cpu nonsense
+6650dac Do Not Build Recovery Or Use it
+95719b0 Add Toolchain Version to Lunch Menu
+254427b Lollipop Audio Only
+ba33efb Remove Default Combos
+0410355 Kill some log spam
+6760197 Remove libdvm dex preopt support.
+142a48d Merge pull request #2 from akhilnarang/lp5.1
+5f204b4 Add SuperSU to UberSlim [2/2] Thanks to chinfire's "How to SU" guide, I've managed to get SuperSU zip flashing on every rom flash and it can easily be updated in vendor_slim
+
+   * kernel/lge/msm8226/
+a606995 Bring back fix for 4.9
+
+   * packages/apps/AudioFX/
+b6c0c17 I hated that icon lol
+
+   * packages/apps/Settings/
+dc27f8a Fix that up
+5847435 Merge pull request #3 from akhilnarang/lp5.1
+4b560ee Launch SuperSU from Settings
+
+   * vendor/slim/
+1d1742c Add prebuilt OpenCamera
+c043261 Merge pull request #2 from akhilnarang/lp5.1
+0e4760c update prebuilt
+f318b11 uberslim: SuperSU
+
+====================
+     07-19-2015
+====================
+
+
+   * art/
+7baa208 Revert "Support map data in the backtrace data structure."
+df3ab0b Delete missed ClampGrowthLimit CHECK
+8aba1d2 Improve dalvik cache pruning
+8c43cdc libart: Force GCC 4.8 on ARM.
+cc21122 Fix concurrent GC ergonomics
+3fb1618 Fix race with Heap::ClampGrowthLimit and GC
+6bdb98e Avoid using dex cache array pointers in libart.
+6f22ffe Add clamp growth limit
+ac1ee0f Move GC daemon locking logic into heap
+2e10c46 Support map data in the backtrace data structure.
+03a8413 Disable Clang as Host Compiler
+a76e022 Fix CC collector boot.
+f44ee10 Fix interpreter to allow 0 size sparse switches.
+bb4494b ART: Fix missing Erase() in error case
+19a60c0 Remove Improper Flag
+b2ac1e2 Add Non-debug cflags to debug cflags
+a2e9771 Remove dex2oat watchdog warning
+e485546 Guard against name == null in ShortDump
+1e3e95b Fix possible null deference in Throwable::Dump
+1ba7c2c Fix compaction unsafe DescribeWait
+
+   * build/
+17ba8e8 Moving back to UBERTC 4.9
+
+   * frameworks/base/
+6a19f87 SlimDim: don't dim navbar on lockscreen
+0a3fa3f Automatic translation import
+
+   * packages/apps/Eleven/
+1cd8c8d Automatic translation import
+
+   * packages/apps/Settings/
+aab233a Automatic translation import
+
+====================
+     07-18-2015
+====================
 
    * build/
 ef3ecc0 build: avoid recovery patch if device setup can't do it correctly
@@ -38,7 +217,6 @@ bd1d7fa Merge "Fix missed calls notifications not shown after you call someone" 
      07-17-2015
 ====================
 
-
    * build/
 8522873 Had to temporarily change ASCII art
 
@@ -68,7 +246,6 @@ f1167f5 Let's enable developer options by default
      07-16-2015
 ====================
 
-
    * build/
 71e63e1 Add some art :-)
 
@@ -94,15 +271,12 @@ e58e628 7-15-15
      07-15-2015
 ====================
 
-
    * system/extras/su/
 f854815 su: allow init to automatically restart daemon
-
 
 ====================
      07-14-2015
 ====================
-
 
    * build/
 5905c27 Allow prebuilt apk files
@@ -172,7 +346,6 @@ c3b128a Bring in prebuilts
      07-13-2015
 ====================
 
-
    * build/
 f8ee153 Merge pull request #1 from SlimRoms/lp5.1
 
@@ -212,7 +385,6 @@ bb28ea5 Add F-Droid/SoundRecorder/CMFileManager to build
      07-12-2015
 ====================
 
-
    * device/lge/w7/
 e7b4fc4 We do not have a krait processor...lol
 
@@ -222,7 +394,6 @@ e7b4fc4 We do not have a krait processor...lol
 ====================
      07-11-2015
 ====================
-
 
    * build/
 e5d3670 Revert "Add Chromium prebuilt and fixup device specific OUT dir [1/2]"
@@ -247,10 +418,8 @@ c3b2b47 Really include drawables for all densities.
      07-10-2015
 ====================
 
-
    * device/qcom/sepolicy/
 98d91d1 Seandroid: Add policy for dts configurator and notifier nodes
 
    * vendor/slim/
 bba7884 Got a pound beside me right now...
-
