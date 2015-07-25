@@ -1,4 +1,46 @@
 ====================
+     07-24-2015
+====================
+
+   * frameworks/base/
+1f499d6 Guard in short-circuit evaluations for stringSplit methods.
+fe53fb8 TaskManager: Fix some spelling errors
+4f70435 TaskManager: Update some functions
+7eca129 Use 24dip of height for statusbar - M style
+adaa031 Disable Slim recents by default
+4842a8f AAPT: STFU-BBQ
+a65eadc ActivityThread, shut the density up!
+
+   * packages/apps/Settings/
+03e9d27 settings: Anti-Piracy Support [1/2]
+79ab569 SlimRecents: Set topmost task to ON
+
+   * packages/services/AntiPiracy/
+4ea5a4c Merge pull request #3 from Tsunamical/patch-1
+e0f8fef Block Game Hacker
+b756ffc Add creehack block
+94fafa9 Use generic Android.mk for now
+c783f65 Make sure we don't run the service if we can't reflect
+54ca837 Add GetApk Market
+4f16b6d add All-in-one downloader
+99786a4 Merge pull request #2 from rogersb11/master
+3d3b14d Add freedom app block support
+0efcdd2 Merge pull request #1 from DHOMD/patch-1
+e98f9fd OCD: clean up temp files.
+
+   * vendor/slim/
+897cef3 Remove Eleven---Add VanillaMusic
+
+====================
+     07-23-2015
+====================
+
+   * build/
+39da429 Back to -O2
+aac44a9 Goodbye overly aggressive compilation flags
+
+
+====================
      07-22-2015
 ====================
 
