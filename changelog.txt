@@ -1,4 +1,173 @@
 ====================
+     07-28-2015
+====================
+
+   * device/qcom/common/
+75f0197 power: Additional changes for 8994
+
+   * frameworks/av/
+facd7cc libstagefright: Fix LPA default min duration
+4709154 audiopolicy: Fix DTS Eagle dependence on kernel
+7877472 cameraservice: Resolve message vs start/stop preview races
+028eef4 camera: add ability for a device to specify MAX_CAMERAS
+
+   * frameworks/base/
+a1fd383 Merge pull request #6 from SlimRoms/lp5.1
+acdb633 Fingerprint: Make the existing FingerprintService semi-useful.
+e75e47a fingerprint: register correct function for nativeEnrollCancel
+7e7d391 fingerprint: detach java vm in HAL callback
+dd43a88 Merge "Fingerprint: Make the existing FingerprintService semi-useful." into lp5.1
+fb7e676 Merge "fingerprint: register correct function for nativeEnrollCancel" into lp5.1
+ab9dc3e Merge "fingerprint: detach java vm in HAL callback" into lp5.1
+5470c0e Hide msim 'no-sim' icons
+eeb5747 SystemUI: hide navigation bar faster in SetupWizard
+7b160b9 ambient display: Fix volume key music control
+9e0c785 Fix volume key music controls and wake up
+0d3b852 fix Notification volume slider linking
+8da07d8 frameworks: read VOLUME_LINK_NOTIFICATION from proper table
+7d2ba3a Implement linked volumes and add upgrade path.
+fa35864 SystemUI: Create expandable volume panel.
+e85552a SystemUI: allow recent tasks to draw behind the status bar
+1b806ea SystemUI: Use smaller battery padding
+701acc0 Add music tile (1/2)
+815c5f7 Revert "Revert "SystemUI: Speed up and clean tests (squash)""
+e99e377 Revert "SystemUI: Speed up and clean tests (squash)"
+09d2987 core: Materialize text select handle
+689f97c Fix battery bar on nav for tablets and phones
+3a17cbe Fix batteryBar on Navbar
+9391587 Battery Bar [1/2]
+c879ff4 DocumentsUI: Add navigation bar color
+525d7fb New DocumentsUI icon
+dfd66fd DocumentsUI: RU translations
+279e4fa DocumentsUI: CA translations
+99c78ad Replaced custom strings with Android defaults
+bd76e13 DocumentsUI: DE-Translation (add custom strings)
+04a854e DocumentsUI: FR translation
+2664bb0 DocumentsUI: IT strings
+97bd181 frameworks/Documents: ES translations
+a470de7 DocumentsUI: fix recursive delete
+2319ce2 DocumentsUI: catch berserk apps on building recents
+6c21e5b base: DocumentUI: fix a few issues handling remote content
+b66c6d5 DocumentsUI: Remove catch-all statements
+8a97af3 DocumentsUI: Allow open files instead of URIs
+2a3f3ed Fix Icon size in DocumentsUI
+6f03e13 DocumentsUI: Add a standalone File Manager
+0ad31ab MediaScanner: Add support for default ringtones per sim
+13b95f9 MediaPlayer: Add multi SIM ringtone support
+
+   * frameworks/native/
+909ed2c Revert "Add OMX_AUDIO_CodingAPE and OMX_AUDIO_CodingDTS"
+
+   * hardware/qcom/audio-caf/msm8974/
+4d3422f hal: Add support for Samsung dual-SIM implementation
+d8219b7 compress offload: use new sample rate representation.
+
+   * hardware/qcom/display-caf/msm8974/
+e6f2237 Merge remote-tracking branch 'cm/cm-12.1-caf-8974' into HEAD
+
+   * hardware/qcom/media-caf/msm8974/
+e6f771e Merge remote-tracking branch 'cm/cm-12.1-caf-8974' into HEAD
+
+   * packages/apps/Settings/
+db27f83 fix msim network
+37987e3 Fix ***ing msim
+7c5c66f Fix ***ing msim
+b4b4dd6 Add music tile (2/2)
+2e2f030 move battery bar in status bar settings
+b3edb42 Battery Bar [2/2]
+b6880ac move battery bar in status bar settings
+e171548 Fix build: cellular drawable dupe
+3b9e9b6 fix derp in msim commit
+97a6a20 Settings: fix custom SIM name lost on reboot
+84c82d3 Settings: Restore proper ringtone for msim
+3765ee4 MSIM : Show a proper text if no number is set
+e461757 Sim: fix null pointer exception if no sim is inserted
+23d56a2 Port over MSIM UX improvements from cm-12.0.
+af3704c Re-add SIM color settings.
+a42af33 Fix data usage tab titles for MSIM.
+49e34cf settings: Fix MR1 compilation issues
+91b73a8 Settings: theme mobile network settings from data usage screen
+3bfbfdc Fix mobile network settings for multi sim (2/2)
+7eeb1a4 Do not show phone-related stuff if there's no subs
+5765c8d MSIM: use index as tab key
+2c59ac0 MSIM - SIM card status: name "SUB x" now "SIM x"
+e4cf8f8 MSIM: Data Usage: data connection switch visibility
+52ca605 MSIM: Data Usage: use the SIM name if available
+f5e029f Settings: msim - update dialogs
+02effba Settings: fix "Mobile Networks" menu option in DataUsageSummary.
+6148b5a MSIM: behave as single SIM when appropriate
+36d59a8 Settings: fix MSim package names
+3d266c7 Settings: Show Baseband version on MSIM devices
+
+   * packages/apps/SoundRecorder/
+bf8552d Merge branch 'remote' into mkl-mr1
+2a7499b Automatic translation import
+
+   * platform_manifest/
+d8ebc8e Manifest : Add qcom hardware repo's for 8994
+
+   * system/core/
+deb530e Merge pull request #1 from SlimRoms/lp5.1
+
+   * vendor/slim/
+dcd2a83 Merge pull request #3 from SlimRoms/lp5.1
+5879b2f Merge "cm: Update properties and libs for stagefright-plugins" into lp5.1
+6d6affa Merge "slim: Add some app-specific performance settings" into lp5.1
+
+====================
+     07-26-2015
+====================
+
+   * frameworks/base/
+43a483d SystemUI: Add option to disable search bar in recents (2/2)
+03b14f2 Recents: Fix 'clear all' button bottom position not working
+1d422e6 [Base]: recents panel clear all button tweaks
+24c0c15 Align recents clear button to screen edge instead of tasks if close
+682db64 systemui: animate clear recents button on exit animation
+cfaffbf systemui: adjust position of clear recents button
+4c0fe30 systemui: animate clear recents exit
+cb3e078 Revert "systemui: animate clear recents button on exit animation"
+796676c FW_Base - Live Volume Steps [1/2]
+
+   * packages/apps/Settings/
+e4935e4 Fix build
+c2d958e Revert "Settings: add "Show weather" toggle for quick settings panel"
+2166a45 RecentSettings: Move screen pinning from security settings to recents settings
+47642df RecentSettings: Update stock recent settings according to SlimRecents switch
+53156bd Settings: Add option to disable search bar in recents (1/2)
+ab32036 [Settings]: recents panel clear all button tweaks
+8f6b1dc Settings: add "Show weather" toggle for quick settings panel
+4058796 Settings: add setting for default alarm tone
+3349a85 Settings: Materialize standard colors in colorpicker
+6a551ac Settings: Lets remove Performance tab tile if no overlays are set
+5df63e4 Settings: Added choice of 45 seconds for screen timeout, lock screen and dream.
+8816126  Settings - Live Volume Steps [2/2]
+f37b05c Do not include all resource densities
+
+====================
+     07-25-2015
+====================
+
+   * frameworks/base/
+e78f27e System Animations Toggle (1/2)
+1f499d6 Guard in short-circuit evaluations for stringSplit methods.
+fe53fb8 TaskManager: Fix some spelling errors
+4f70435 TaskManager: Update some functions
+7eca129 Use 24dip of height for statusbar - M style
+adaa031 Disable Slim recents by default
+4842a8f AAPT: STFU-BBQ
+a65eadc ActivityThread, shut the density up!
+
+   * packages/apps/Settings/
+6d5a8e5 Enable Access to Appops Menu
+971505f System Animations Toggle (2/2)
+03e9d27 settings: Anti-Piracy Support [1/2]
+79ab569 SlimRecents: Set topmost task to ON
+
+   * vendor/slim/
+897cef3 Remove Eleven---Add VanillaMusic
+
+====================
      07-24-2015
 ====================
 
