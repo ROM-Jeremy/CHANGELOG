@@ -1,4 +1,141 @@
 ====================
+     08-01-2015
+====================
+
+   * frameworks/base/
+0fc3f13 CellularTile: Fix secondary button doesn't work and change single click behavior
+d1fac08 WifiTile: Fix wifi toggle state in detail view
+a395c32 Mobile data tile: open network settings
+
+   * packages/apps/AudioFX/
+1b55a89 Merge pull request #1 from SlimRoms/lp5.1
+
+   * system/core/
+2ecceaa Merge pull request #2 from SlimRoms/lp5.1
+
+   * vendor/slim/
+80e429d Merge pull request #5 from SlimRoms/lp5.1
+
+====================
+     07-31-2015
+====================
+
+   * external/bluetooth/bluedroid/
+e3a2d2f Bluetooth losing HF connection to car-kit after 5 seconds
+
+   * frameworks/base/
+2a2bb16 Merge branch 'lp5.1' of github.com:ROM-Jeremy/frameworks_base into lp5.1
+1e8d61c unbreak carrier label for msim
+db327bd Lol, sneaky little code
+a16488a Fix derps
+e8ed62a Fix Msim SystemUI FC
+33df452 Fix Build For MSIM Devices!
+c8e6b1a NetworkTraffic: Show/hide arrows (1/2)
+69572bb Network traffic: add color to arrows
+cc5c0d9 Frameworks: network traffic color option (1/2)
+2ab15ec [1/2] SystemUI: Network speed indicator (Squshed)
+91ab18d Show carrier label / custom & change color [1/2]
+578b754 Revert toast anim/network traffic indicator
+
+   * packages/apps/Settings/
+e163acc fix carrier label fc on msim
+27f35f9 Fix empty carrier label options on msim devices
+72946e8 change network traffic from check box to switch
+99c6e5f fix derp in network traffic color
+defb79c NetworkTraffic: Show/hide arrows (2/2)
+3886c7f NetworkTraffic: Append prefix 'net' to attribute names
+7a08bfd Settings: network traffic color option (2/2)
+9956599 Settings: network traffic meter
+93c24aa Show carrier label / custom & change color [2/2]
+0bf53e1 Revert "Add network traffic indicator (part 2)"
+f13a490 Revert toast animations & network traffic indicator
+
+   * vendor/slim/
+3b56081 slim : move profile service_contexts to vendor
+
+====================
+     07-30-2015
+====================
+
+   * build/
+d7b1578 arm64: Enable Cortex A53 Errata 843419, 835769 ldflags
+1c8ec62 AArch64: Addressing Cortex-A53 erratum 835769
+823d428 Revert "Disable -mcpu=cortex-a15 flag for krait"
+cf041f0 build: Fix device detection for a few of the envsetup commands
+1094659 build: Fix image creation for F2FS-only configuration
+b736e5a Add support for LZMA in blockimgdiff
+af2024a definitions.mk: look for definitions.mk in device/*/build also
+b871ba5 minnow_max: search for cm.mk in additional directories
+ca70e2d otasigcheck: Extract the key
+fd2e1d9 build: Add the factorypackage target
+6656e49 build: Unset JAVA_TOOL_OPTIONS to read java version
+774002f build: Add IGNORE_SUBDIR to clear vars.
+2dd43e2 build/core: Create means of ignoring subdir layer for packages.
+4dad4e1 kernel: Fix kernelconfig build
+
+   * frameworks/base/
+9b612c0 Add toast animation 1/2
+19702c4 Revert "Add toast animation 1/2"
+998adde Add toast animation 1/2
+8d441a5 Slim Global Menu (1/2)
+3eafb45 Add network traffic indicator
+e26746b camera: Unbreak the extended face detection code
+20c35bc Allow sending vendor- or device-specific commands to the camera HAL.
+a1a7718 ActivityManagerService: Don't export 'system' process in running app list
+a3cda75 DO NOT MERGE Fix JNI global references leak in AudioEffect
+f99e7a0 backup: Fix a system server crash
+6bfb3f6 Avoid ANR loop because of queued-up ANR runnables
+
+   * packages/apps/Settings/
+5c58225 Derp
+1f6b4cd Slim Global Menu (2/2)
+be87ea9 Merge branch 'lp5.1' of github.com:ROM-Jeremy/packages_apps_Settings-1 into lp5.1
+2f5778e Add toast animation 2/2
+a44a224 Derp
+ba462e9 Add network traffic indicator (part 2)
+bfc9d55 Development settings: Remove icon from root dialog
+
+   * platform_manifest/
+156ab78 Manifest: Underp new prebuilts toolchains
+
+   * vendor/slim/
+eb3560a Merge pull request #4 from SlimRoms/lp5.1
+
+====================
+     07-29-2015
+====================
+
+   * external/bluetooth/bluedroid/
+3d063ce Fix compile error in btif_rfcomm due to invalid comparison
+
+   * external/jpeg/
+f413ec3 Enable neon optimization for 32bits.
+
+   * external/sepolicy/
+c37637c sepolicy: Remove profiles from context, moved to slim
+
+   * frameworks/webview/
+d8604c2 Merge pull request #1 from ResurrectionRemix/cm-12.1
+0253727 Upgrade WebView to version 44.0.2403.90
+
+   * packages/apps/AudioFX/
+71668ce Automatic translation import
+
+   * packages/apps/Bluetooth/
+6cb69d2 Automatic translation import
+864879f Automatic translation import
+
+   * platform_manifest/
+6245f91 slim : use forks of aarch64 gcc for x86 and darwin for A53 erata workarounds.
+
+   * system/core/
+ac45a5b slim : fix mismerge
+6d13f15 init: Add a "starting" state for services
+
+   * vendor/slim/
+f194ee6 Bump to 0.3
+
+====================
      07-28-2015
 ====================
 
