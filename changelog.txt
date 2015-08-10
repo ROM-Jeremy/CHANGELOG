@@ -1,4 +1,115 @@
 ====================
+     08-10-2015
+====================
+
+   * platform_manifest/
+4ca8a43 Well, these were needed lol
+
+   * vendor/slim/
+bfb49ea Update KernelAdiutor
+
+====================
+     08-09-2015
+====================
+
+   * build/
+b294c05 "LMY48I"
+6ba3ef1 Remove duplicate CTS tests from libcore cts packages.
+3994668 build: kernel: Remove link on warning to CyanogenMods Wiki
+
+   * frameworks/base/
+6c40e5f [2/2] SlimHeadsUp: Add a global 3-way switch
+71f89ac SystemUI: more SlimDim performance boosts
+3c66ab8 DO NOT MERGE Change to add STK_PERMISSION for stk related commands.
+6a676cd Prevent system uid component from running in an app process
+48ee35f Lockdown AM.getRunningAppProcesses API with permission.REAL_GET_TASKS
+9a59316 Update frameworks-res.apk icon
+c46c230 Fix for rare recents npe?
+1d194a0 Show recents on Home button longpress
+1238453 iBotPeaches aapt changes for lollipop
+95891c2 DocumentsUI: New icon
+5d11049 Fix Allocation-less launches
+367588a Screenshot: prevent handler leak
+df6409a Fix crash in widget pager
+5240025 RRO: idmap: fix sorting of overlays.list
+
+   * packages/apps/Settings/
+85b429a Automatic translation import
+a750abd [1/2] SlimHeadsUp: Add a global 3-way switch
+
+   * packages/services/Telecomm/
+957f403 Automatic translation import
+
+   * packages/services/Telephony/
+918c387 DO NOT MERGE Change to make STK related intents protected.
+f6134f8 Fix missed calls notifications not shown after you call someone
+
+   * platform_manifest/
+0359f5d Derp
+c86cd57 5.1.1_r9
+
+   * system/core/
+3c90b43 Merge pull request #3 from SlimRoms/lp5.1
+
+====================
+     08-07-2015
+====================
+
+   * packages/services/AntiPiracy/
+464e7b9 Add mobilism market
+17a45cc Add cracked play store that gives refunds without uninstalling
+95d1449 Add Z market to the list
+5407289 Update readme
+cc9cdbe Update readme
+1a69d11 AntiPiracyInstallreceiver: Move the toast out of package check loop
+935923a Update readme
+467d72a Update readme
+
+====================
+     08-06-2015
+====================
+
+   * external/sqlite/
+be3c8d1 Upgrade to SQLite 3.8.11.1
+
+   * external/tinyalsa/
+4dd24f6 tinyalsa: Use kernel headers when available
+
+   * frameworks/av/
+0a95632 audio effects: fix heap overflow
+6838faa IOMX: Enable buffer ptr to buffer id translation for arm32
+e39be32 IOMX: Add buffer range check to emptyBuffer
+3619f14 HDCP: buffer over flow check -- DO NOT MERGE
+12ba02c Add AUtils::isInRange, and use it to detect malformed MPEG4 nal sizes
+d120470 Add some sanity checks
+
+   * frameworks/opt/telephony/
+4e3d232 DO NOT MERGE Change to add STK_PERMISSION for stk related commands.
+
+   * packages/apps/SoundRecorder/
+ba97279 Merge branch 'remote' into mkl-mr1
+2099282 SoundRecorder: Mark recorder as processed if we've saved the sample.
+706592f Automatic translation import
+
+   * packages/apps/Stk/
+16ce5f5 DO NOT MERGE Change to add STK_PERMISSION for stk related commands.
+
+   * system/core/
+c7cfe87 init: Allow devices to use user-space tools to set ro.serialno
+e559326 adbd: Add intel style super-speed support
+
+   * vendor/slim/
+39f0e35 Merge pull request #6 from SlimRoms/lp5.1
+
+====================
+     My Fault
+====================
+
+   * There were a lot of changes in this blank area
+   But my source got screwed up, and so did the changelog as a consequence
+   Just check my github to see all the changes made in this time frame!
+
+====================
      08-01-2015
 ====================
 
