@@ -1,4 +1,172 @@
 ====================
+     08-15-2015
+====================
+
+   * build/
+6db2629 LVY48E
+
+   * device/lge/w7/
+f8a7888 Increase headphone volume to stock values
+
+   * frameworks/base/
+f435728 audio: Playback over USB DAC connected before boot
+bd39ac6 [ActivityManager] Bring up Service if not schedule to restart
+6c426ba PBD: Apply the same emmc discard logic as ext4_utils
+b70701b Fix intent resolution of default preferred apps.
+
+   * packages/apps/AudioFX/
+a338685 Merge pull request #2 from SlimRoms/lp5.1
+
+   * packages/apps/Dialer/
+5f1151b Merge pull request #2 from SlimRoms/lp5.1
+
+   * packages/apps/InCallUI/
+2b06d6e Merge pull request #2 from SlimRoms/lp5.1
+
+   * packages/apps/Settings/
+c4b0c1d Expand on the original settings commit to expose dashboard categories
+
+   * platform_manifest/
+15b49f5 5.1.1_r13
+
+   * vendor/slim/
+d857f9f Bump to Beta 0.5
+ee32e02 Add new Tuenti MNC SPN override name
+5ac3cc8 APN: Update configurations for Philippine networks
+874852c apns: zero-length items are evil and break auto-selection
+
+====================
+     08-14-2015
+====================
+
+   * frameworks/av/
+5fb5ced stagefright: Don't crash on invalid / null AVCC atoms in MKV
+ee40372 Fatal error while playing certain mkv files.
+b62ecac MPEG4Extractor.cpp: handle chunk_size > SIZE_MAX
+
+   * packages/apps/SoundRecorder/
+eb8c76b Merge branch 'remote' into mkl-mr1
+
+====================
+     08-13-2015
+====================
+
+   * bionic/
+b58fd47 Merge branch 'lp5.1' of github.com:ROM-Jeremy/android_bionic into HEAD
+00624e2 libc: Import optimized string routines from Apple
+
+   * device/lge/w7/
+82ca692 Please leave egl.cfg
+
+   * frameworks/av/
+4cb0883 AudioMixer: fill 0s at right place when no more buffers available
+493f1e6 video: Disable resync markers
+392167a libstagefright: Scale up bitrate for HSR videos
+
+   * frameworks/base/
+590bff4 Fix StrictMode violation during getDefaultApn()
+f85e766 AppOps: fix delete ops wrongly matched issue
+a41ec1d frameworks/base: synchronize surface control object access.
+4d35f47 frameworks/base: Fix ContentService JNI leaks
+9ff5097 Make MANAGE_DOCUMENTS permission signature|system
+
+   * packages/apps/Settings/
+fd9035d Update iconography to VectorDrawable and adjust coloring.
+
+   * platform_manifest/
+11de2a4 Bionic is safe to track locally again lol
+
+====================
+     08-12-2015
+====================
+
+   * bionic/
+688492c Let's bring this back for now
+13a0a5d cortex-a7: Fix build
+aba6660 cortex-a53: fix build
+def5dd6 Revert "Revert "Reenable support for non-PIE executables""
+06761f5 Re-export libgcc's __aeabi_fcmplt
+146e348 linker: convert 'mov pc' instruction to 'bx'
+47b1b58 cortex-a7: set proper memcmp.S path
+5c6f48d Add optimized cortex-a7/cortex-a53 memset/memcpy.
+bfce9a2 libm: Fix makefiles
+fc4b7f0 Add aarch64 instructions wherever possible
+9f618d9 libm: arm: Add arm specific floor() optimization
+e8b5b65 Fix our <complex.h> support.
+993828f Get new coshl, sinhl, and tanhl implementations from upstream.
+9f4157e Sync libm with upstream.
+
+   * build/
+1fe3702 LMY48J
+
+   * device/lge/w7/
+2f3d997 Delete egl.cfg
+ab5c2df egl.cfg is deprecated
+
+   * frameworks/av/
+30e9bf6 libstagefright: Fix incorrect duration calculation
+87ea4a2 libstagefright: fix output buffer is not released by Writer when stopping
+6be67eb Validation of Number of Channels on WAV files
+4a6fa82 The preview frame data is broken when sending via Binder
+e3bd1da Fix new[] vs delete mismatch.
+b873002 Check allocation
+79ec25c Fix global-buffer-overflow in voAWB_Copy.
+41a4205 libstagefright: Remove nBitPerSample CHECK
+fc6923c Detect allocation failures and bail gracefully
+efaf8ce MPEG4Extractor.cpp: Add check for size == SIZE_MAX
+a1e764e Fix null-pointer-dereferences accessing the SampleTable
+785882c Fix multiple division-by-zero conditions in MPEG4 parsing
+6435fca libeffects: validate channel mask in downmixer configure
+0314c27 audiopolicy: fix playback of multichannel pcm clips via low latency output
+f8f33e8 audiopolicy: fix for voice call to work on USB headset during concurrency
+a586522 audiopolicy: use deep_buffer as default output for music stream
+973f1fd AudioOutput: Always open AudioTrack with a flag
+588eff1 SampleTable: fix integer overflow checks.
+1f43bb9 MPEG4Extractor: still more NULL dereference fixes
+a6712d0 Guard against codecinfo overflow
+2caba17 DO NOT MERGE: Lock drm plugin API calls globally, not per MediaDrm instance
+
+   * frameworks/base/
+a39ede4 [2/2] Base : Slimified CM Navigation Ring Targets
+
+   * frameworks/native/
+b5db5a4 Verify that the native handle was created
+
+   * hardware/qcom/audio-caf/msm8974/
+4f00c36 post_proc: explicitly disable virtualizer module if strength is 0
+924a02b post_proc: fix crash in offload effect bundle during stop output
+5785d04 hal: only open the amplifier once
+e10c946 hal: enable amplifier earlier
+
+   * hardware/qcom/fm/
+ffa4916 QComFM : Allow the FM Transmitter to be reactivated
+2798beb Automatic translation import
+a5462be FMRecord: Grant REAL_GET_TASKS
+
+   * packages/apps/AudioFX/
+eb7967c Automatic translation import
+
+   * packages/apps/Settings/
+88af7dc [1/2] Settings : Slimified CM Navigation Ring Targets
+
+   * packages/apps/SoundRecorder/
+debb1f2 SoundRecorder: Add support for 1-channel WAV files
+
+   * platform_manifest/
+8771c0b Let's not track our bionic right now
+37d8bc0 Track bionic locally
+094a8b3 5.1.1_r10
+
+   * vendor/slim/
+9b49044 Bump to Beta 04
+
+====================
+     08-11-2015
+====================
+
+    *Took a much needed break lol
+
+====================
      08-10-2015
 ====================
 
