@@ -1,4 +1,88 @@
 ====================
+     08-20-2015
+====================
+
+   * build/
+f4c231f Lol oops
+
+   * frameworks/base/
+cc75c90 Revert "QS: add Notification tile and make it act as a quick toggle [1/2]"
+6b40faf Revert "Notification tile long press: show a persistent expanded vol panel"
+
+   * packages/apps/Settings/
+d2fecb3 Merge branch 'lp5.1' of github.com:ROM-Jeremy/packages_apps_Settings into HEAD
+c48c760 Revert "QS: add Notification tile and make it act as a quick toggle [2/2]"
+1134567 I just love merge derps
+
+   * packages/services/Telephony/
+b04d826 Fix Phone > Settings > Call Settings FC on MSIM
+77e5373 Revert "fix dialer>settings>call settings fc and other msim stuff"
+669a210 Revert "add non-intrusive for msim"
+
+   * platform_manifest/
+8a600e7 Let's track our own Telephony
+65ca219 Track InCallUI from TeamOrion
+
+====================
+     08-19-2015
+====================
+
+   * packages/apps/InCallUI/
+b6d3188 [3/3] Flip to Mute/Reject Call
+
+   * packages/services/Telephony/
+96e42ee [2/3] Flip to Mute/Reject Call
+
+====================
+     08-18-2015
+====================
+
+  * Off Day lol
+
+====================
+     08-17-2015
+====================
+
+   * build/
+3caf955 roomservice: use force-sync when adding    *s with roomservice
+8ef45b5 Set metadata on bootzip
+
+   * frameworks/base/
+156650b [1/3] Settings : Add user control over WiFi regulatory domain (country)
+e4a193b [1/3] Flip to Mute/Reject Call
+5cfc8a8 Add back increasing ring feature (1/3)
+3c7c86b Base: Allow/Prevent notification light in Zen mode (1 of 2)
+dd966f5 Notification tile long press: show a persistent expanded vol panel
+a2b2faf QS: add Notification tile and make it act as a quick toggle [1/2]
+
+   * packages/apps/Settings/
+e0a8f1f settings: wifi priorities
+5773684 [3/3] Settings : Add user control over WiFi regulatory domain (country)
+aaab10e PGM: Permute simple and long click behaviour
+cd0987d Add back increasing ring feature (2/3).
+bf2b7a7 Settings: Allow/Prevent notification light in Zen mode (2 of 2)
+4188a2c QS: add Notification tile and make it act as a quick toggle [2/2]
+
+   * system/core/
+de556cc Merge pull request #4 from SlimRoms/lp5.1
+
+====================
+     08-16-2015
+====================
+
+   * build/
+d75f039 envsetup: make reposync use --force-sync as well
+d207c68 Allow -mcpu=cortex-a15 for clang
+9c907f7 Don't use -Wl,--fix-cortex-a8 for Cortex A7, A9, A15, Krait or Denver
+a8cc794 Move definition of -D__ARM_FEATURE_LPAE=1 cflag to top-level.
+50dfc5a Apply correct, optimized mfpu compiler flag for ARMv7-A Cortex CPUs
+69f014a build: Fix extra userdata generation some more
+d0d6778 build: Fix extra userdata generation
+
+   * frameworks/av/
+79d15b0 stagefright: Add libhwc to exynos include paths
+
+====================
      08-15-2015
 ====================
 
