@@ -1,1136 +1,137 @@
 ====================
-     08-20-2015
+     09-05-2015
 ====================
 
-   * build/
-f4c231f Lol oops
 
    * frameworks/base/
-cc75c90 Revert "QS: add Notification tile and make it act as a quick toggle [1/2]"
-6b40faf Revert "Notification tile long press: show a persistent expanded vol panel"
+d97fecd Automatic translation import
+4215121 SettingsProvider: turn off mobile data roaming by default
+64ac1d1 Re-do contextual notification header images
+97a4bd8 Import Moto X Ringtones and Notifications
+ca2ac44 Fix Android API exceptions
+ad1748d base: delete obsolete context header images
+9c47212 SystemUI: check RecentsConfiguration isn't null before running RecentsTaskLoader
+95a047d SystemUI: do not load header bar if boot isn't complete
+bc02399 Fix the cell standby mobile radio active issue
+93abb04 SystemUI: time-context header fixes
+d0af836 [1/2] SystemUI: Add time-context headers to the notification header
 
    * packages/apps/Settings/
-d2fecb3 Merge branch 'lp5.1' of github.com:ROM-Jeremy/packages_apps_Settings into HEAD
-c48c760 Revert "QS: add Notification tile and make it act as a quick toggle [2/2]"
-1134567 I just love merge derps
-
-   * packages/services/Telephony/
-b04d826 Fix Phone > Settings > Call Settings FC on MSIM
-77e5373 Revert "fix dialer>settings>call settings fc and other msim stuff"
-669a210 Revert "add non-intrusive for msim"
-
-   * platform_manifest/
-8a600e7 Let's track our own Telephony
-65ca219 Track InCallUI from TeamOrion
-
-====================
-     08-19-2015
-====================
-
-   * packages/apps/InCallUI/
-b6d3188 [3/3] Flip to Mute/Reject Call
-
-   * packages/services/Telephony/
-96e42ee [2/3] Flip to Mute/Reject Call
-
-====================
-     08-18-2015
-====================
-
-  * Off Day lol
-
-====================
-     08-17-2015
-====================
-
-   * build/
-3caf955 roomservice: use force-sync when adding    *s with roomservice
-8ef45b5 Set metadata on bootzip
-
-   * frameworks/base/
-156650b [1/3] Settings : Add user control over WiFi regulatory domain (country)
-e4a193b [1/3] Flip to Mute/Reject Call
-5cfc8a8 Add back increasing ring feature (1/3)
-3c7c86b Base: Allow/Prevent notification light in Zen mode (1 of 2)
-dd966f5 Notification tile long press: show a persistent expanded vol panel
-a2b2faf QS: add Notification tile and make it act as a quick toggle [1/2]
-
-   * packages/apps/Settings/
-e0a8f1f settings: wifi priorities
-5773684 [3/3] Settings : Add user control over WiFi regulatory domain (country)
-aaab10e PGM: Permute simple and long click behaviour
-cd0987d Add back increasing ring feature (2/3).
-bf2b7a7 Settings: Allow/Prevent notification light in Zen mode (2 of 2)
-4188a2c QS: add Notification tile and make it act as a quick toggle [2/2]
+f23bff7 Automatic translation import
+941318c [2/2] Settings: Add time-context headers to the notification header
+6602b8c Settings: System app remover
+f2bc618 Change refresh icon under Process Stats
 
    * system/core/
-de556cc Merge pull request #4 from SlimRoms/lp5.1
-
-====================
-     08-16-2015
-====================
-
-   * build/
-d75f039 envsetup: make reposync use --force-sync as well
-d207c68 Allow -mcpu=cortex-a15 for clang
-9c907f7 Don't use -Wl,--fix-cortex-a8 for Cortex A7, A9, A15, Krait or Denver
-a8cc794 Move definition of -D__ARM_FEATURE_LPAE=1 cflag to top-level.
-50dfc5a Apply correct, optimized mfpu compiler flag for ARMv7-A Cortex CPUs
-69f014a build: Fix extra userdata generation some more
-d0d6778 build: Fix extra userdata generation
-
-   * frameworks/av/
-79d15b0 stagefright: Add libhwc to exynos include paths
-
-====================
-     08-15-2015
-====================
-
-   * build/
-6db2629 LVY48E
-
-   * device/lge/w7/
-f8a7888 Increase headphone volume to stock values
-
-   * frameworks/base/
-f435728 audio: Playback over USB DAC connected before boot
-bd39ac6 [ActivityManager] Bring up Service if not schedule to restart
-6c426ba PBD: Apply the same emmc discard logic as ext4_utils
-b70701b Fix intent resolution of default preferred apps.
-
-   * packages/apps/AudioFX/
-a338685 Merge pull request #2 from SlimRoms/lp5.1
-
-   * packages/apps/Dialer/
-5f1151b Merge pull request #2 from SlimRoms/lp5.1
-
-   * packages/apps/InCallUI/
-2b06d6e Merge pull request #2 from SlimRoms/lp5.1
-
-   * packages/apps/Settings/
-c4b0c1d Expand on the original settings commit to expose dashboard categories
-
-   * platform_manifest/
-15b49f5 5.1.1_r13
+f430c23 Merge pull request #5 from SlimRoms/lp5.1
 
    * vendor/slim/
-d857f9f Bump to Beta 0.5
-ee32e02 Add new Tuenti MNC SPN override name
-5ac3cc8 APN: Update configurations for Philippine networks
-874852c apns: zero-length items are evil and break auto-selection
+0c12f50 Update Spain APNs
+fd4e2e2 Update India APNs to YU list
+b25470e Fix Airtel APN Selection
+f00059a Updated APN settings for Latvian operators
+fa49663 Rogers LTE apn fix?
+3da1a59 Fix Movistar APNs
+c8c5692 Bump Beta 0.6
+c4567a7 Update prebuilt apk's
+9b8e570 Make changelog track 7 days worth of changes
 
 ====================
-     08-14-2015
+     09-04-2015
 ====================
 
-   * frameworks/av/
-5fb5ced stagefright: Don't crash on invalid / null AVCC atoms in MKV
-ee40372 Fatal error while playing certain mkv files.
-b62ecac MPEG4Extractor.cpp: handle chunk_size > SIZE_MAX
+
+   * frameworks/base/
+f3fa053 Revert "SystemUI: option to disable lock screen shortcuts (1/2)"
+ca74359 SystemUI: rework battery saver bar color feature
+058a179 QS: add Battery saver tile
+4da225d SystemUI: option to disable lock screen shortcuts (1/2)
+45b9669 Frameworks: add ability to change the color in battery saver mode (1/2)
+
+   * packages/apps/Settings/
+d3df2f8 QS : Battery-saver tile
+21b0789 Settings: add ability to change the color in battery saver mode (2/2) User complain about the ugly orange....give the user the ability to change the color in status and navigation bar if battery saver mode is activated.
+
+   * platform_manifest/
+f1cf6fc 4.8 is no longer needed
+
+====================
+     09-03-2015
+====================
+
+
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-4.9/
+0f1ee28 9-1-2015 - 4.9.4 UBERTC Snapshot
+
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/
+d354031 9-1-2015 - 4.9.4 UBERTC Snapshot
+
+====================
+     09-02-2015
+====================
+
 
    * packages/apps/SoundRecorder/
-eb8c76b Merge branch 'remote' into mkl-mr1
+0e90d61 Merge branch 'remote' into mkl-mr1
 
 ====================
-     08-13-2015
+     09-01-2015
 ====================
 
-   * bionic/
-b58fd47 Merge branch 'lp5.1' of github.com:ROM-Jeremy/android_bionic into HEAD
-00624e2 libc: Import optimized string routines from Apple
 
    * device/lge/w7/
-82ca692 Please leave egl.cfg
-
-   * frameworks/av/
-4cb0883 AudioMixer: fill 0s at right place when no more buffers available
-493f1e6 video: Disable resync markers
-392167a libstagefright: Scale up bitrate for HSR videos
-
-   * frameworks/base/
-590bff4 Fix StrictMode violation during getDefaultApn()
-f85e766 AppOps: fix delete ops wrongly matched issue
-a41ec1d frameworks/base: synchronize surface control object access.
-4d35f47 frameworks/base: Fix ContentService JNI leaks
-9ff5097 Make MANAGE_DOCUMENTS permission signature|system
-
-   * packages/apps/Settings/
-fd9035d Update iconography to VectorDrawable and adjust coloring.
-
-   * platform_manifest/
-11de2a4 Bionic is safe to track locally again lol
-
-====================
-     08-12-2015
-====================
-
-   * bionic/
-688492c Let's bring this back for now
-13a0a5d cortex-a7: Fix build
-aba6660 cortex-a53: fix build
-def5dd6 Revert "Revert "Reenable support for non-PIE executables""
-06761f5 Re-export libgcc's __aeabi_fcmplt
-146e348 linker: convert 'mov pc' instruction to 'bx'
-47b1b58 cortex-a7: set proper memcmp.S path
-5c6f48d Add optimized cortex-a7/cortex-a53 memset/memcpy.
-bfce9a2 libm: Fix makefiles
-fc4b7f0 Add aarch64 instructions wherever possible
-9f618d9 libm: arm: Add arm specific floor() optimization
-e8b5b65 Fix our <complex.h> support.
-993828f Get new coshl, sinhl, and tanhl implementations from upstream.
-9f4157e Sync libm with upstream.
-
-   * build/
-1fe3702 LMY48J
-
-   * device/lge/w7/
-2f3d997 Delete egl.cfg
-ab5c2df egl.cfg is deprecated
-
-   * frameworks/av/
-30e9bf6 libstagefright: Fix incorrect duration calculation
-87ea4a2 libstagefright: fix output buffer is not released by Writer when stopping
-6be67eb Validation of Number of Channels on WAV files
-4a6fa82 The preview frame data is broken when sending via Binder
-e3bd1da Fix new[] vs delete mismatch.
-b873002 Check allocation
-79ec25c Fix global-buffer-overflow in voAWB_Copy.
-41a4205 libstagefright: Remove nBitPerSample CHECK
-fc6923c Detect allocation failures and bail gracefully
-efaf8ce MPEG4Extractor.cpp: Add check for size == SIZE_MAX
-a1e764e Fix null-pointer-dereferences accessing the SampleTable
-785882c Fix multiple division-by-zero conditions in MPEG4 parsing
-6435fca libeffects: validate channel mask in downmixer configure
-0314c27 audiopolicy: fix playback of multichannel pcm clips via low latency output
-f8f33e8 audiopolicy: fix for voice call to work on USB headset during concurrency
-a586522 audiopolicy: use deep_buffer as default output for music stream
-973f1fd AudioOutput: Always open AudioTrack with a flag
-588eff1 SampleTable: fix integer overflow checks.
-1f43bb9 MPEG4Extractor: still more NULL dereference fixes
-a6712d0 Guard against codecinfo overflow
-2caba17 DO NOT MERGE: Lock drm plugin API calls globally, not per MediaDrm instance
-
-   * frameworks/base/
-a39ede4 [2/2] Base : Slimified CM Navigation Ring Targets
-
-   * frameworks/native/
-b5db5a4 Verify that the native handle was created
-
-   * hardware/qcom/audio-caf/msm8974/
-4f00c36 post_proc: explicitly disable virtualizer module if strength is 0
-924a02b post_proc: fix crash in offload effect bundle during stop output
-5785d04 hal: only open the amplifier once
-e10c946 hal: enable amplifier earlier
-
-   * hardware/qcom/fm/
-ffa4916 QComFM : Allow the FM Transmitter to be reactivated
-2798beb Automatic translation import
-a5462be FMRecord: Grant REAL_GET_TASKS
-
-   * packages/apps/AudioFX/
-eb7967c Automatic translation import
-
-   * packages/apps/Settings/
-88af7dc [1/2] Settings : Slimified CM Navigation Ring Targets
-
-   * packages/apps/SoundRecorder/
-debb1f2 SoundRecorder: Add support for 1-channel WAV files
-
-   * platform_manifest/
-8771c0b Let's not track our bionic right now
-37d8bc0 Track bionic locally
-094a8b3 5.1.1_r10
-
-   * vendor/slim/
-9b49044 Bump to Beta 04
-
-====================
-     08-11-2015
-====================
-
-    *Took a much needed break lol
-
-====================
-     08-10-2015
-====================
-
-   * platform_manifest/
-4ca8a43 Well, these were needed lol
-
-   * vendor/slim/
-bfb49ea Update KernelAdiutor
-
-====================
-     08-09-2015
-====================
-
-   * build/
-b294c05 "LMY48I"
-6ba3ef1 Remove duplicate CTS tests from libcore cts packages.
-3994668 build: kernel: Remove link on warning to CyanogenMods Wiki
-
-   * frameworks/base/
-6c40e5f [2/2] SlimHeadsUp: Add a global 3-way switch
-71f89ac SystemUI: more SlimDim performance boosts
-3c66ab8 DO NOT MERGE Change to add STK_PERMISSION for stk related commands.
-6a676cd Prevent system uid component from running in an app process
-48ee35f Lockdown AM.getRunningAppProcesses API with permission.REAL_GET_TASKS
-9a59316 Update frameworks-res.apk icon
-c46c230 Fix for rare recents npe?
-1d194a0 Show recents on Home button longpress
-1238453 iBotPeaches aapt changes for lollipop
-95891c2 DocumentsUI: New icon
-5d11049 Fix Allocation-less launches
-367588a Screenshot: prevent handler leak
-df6409a Fix crash in widget pager
-5240025 RRO: idmap: fix sorting of overlays.list
-
-   * packages/apps/Settings/
-85b429a Automatic translation import
-a750abd [1/2] SlimHeadsUp: Add a global 3-way switch
-
-   * packages/services/Telecomm/
-957f403 Automatic translation import
-
-   * packages/services/Telephony/
-918c387 DO NOT MERGE Change to make STK related intents protected.
-f6134f8 Fix missed calls notifications not shown after you call someone
-
-   * platform_manifest/
-0359f5d Derp
-c86cd57 5.1.1_r9
-
-   * system/core/
-3c90b43 Merge pull request #3 from SlimRoms/lp5.1
-
-====================
-     08-07-2015
-====================
-
-   * packages/services/AntiPiracy/
-464e7b9 Add mobilism market
-17a45cc Add cracked play store that gives refunds without uninstalling
-95d1449 Add Z market to the list
-5407289 Update readme
-cc9cdbe Update readme
-1a69d11 AntiPiracyInstallreceiver: Move the toast out of package check loop
-935923a Update readme
-467d72a Update readme
-
-====================
-     08-06-2015
-====================
-
-   * external/sqlite/
-be3c8d1 Upgrade to SQLite 3.8.11.1
-
-   * external/tinyalsa/
-4dd24f6 tinyalsa: Use kernel headers when available
-
-   * frameworks/av/
-0a95632 audio effects: fix heap overflow
-6838faa IOMX: Enable buffer ptr to buffer id translation for arm32
-e39be32 IOMX: Add buffer range check to emptyBuffer
-3619f14 HDCP: buffer over flow check -- DO NOT MERGE
-12ba02c Add AUtils::isInRange, and use it to detect malformed MPEG4 nal sizes
-d120470 Add some sanity checks
-
-   * frameworks/opt/telephony/
-4e3d232 DO NOT MERGE Change to add STK_PERMISSION for stk related commands.
-
-   * packages/apps/SoundRecorder/
-ba97279 Merge branch 'remote' into mkl-mr1
-2099282 SoundRecorder: Mark recorder as processed if we've saved the sample.
-706592f Automatic translation import
-
-   * packages/apps/Stk/
-16ce5f5 DO NOT MERGE Change to add STK_PERMISSION for stk related commands.
-
-   * system/core/
-c7cfe87 init: Allow devices to use user-space tools to set ro.serialno
-e559326 adbd: Add intel style super-speed support
-
-   * vendor/slim/
-39f0e35 Merge pull request #6 from SlimRoms/lp5.1
-
-====================
-     My Fault
-====================
-
-   * There were a lot of changes in this blank area
-   But my source got screwed up, and so did the changelog as a consequence
-   Just check my github to see all the changes made in this time frame!
-
-====================
-     08-01-2015
-====================
-
-   * frameworks/base/
-0fc3f13 CellularTile: Fix secondary button doesn't work and change single click behavior
-d1fac08 WifiTile: Fix wifi toggle state in detail view
-a395c32 Mobile data tile: open network settings
-
-   * packages/apps/AudioFX/
-1b55a89 Merge pull request #1 from SlimRoms/lp5.1
-
-   * system/core/
-2ecceaa Merge pull request #2 from SlimRoms/lp5.1
-
-   * vendor/slim/
-80e429d Merge pull request #5 from SlimRoms/lp5.1
-
-====================
-     07-31-2015
-====================
-
-   * external/bluetooth/bluedroid/
-e3a2d2f Bluetooth losing HF connection to car-kit after 5 seconds
-
-   * frameworks/base/
-2a2bb16 Merge branch 'lp5.1' of github.com:ROM-Jeremy/frameworks_base into lp5.1
-1e8d61c unbreak carrier label for msim
-db327bd Lol, sneaky little code
-a16488a Fix derps
-e8ed62a Fix Msim SystemUI FC
-33df452 Fix Build For MSIM Devices!
-c8e6b1a NetworkTraffic: Show/hide arrows (1/2)
-69572bb Network traffic: add color to arrows
-cc5c0d9 Frameworks: network traffic color option (1/2)
-2ab15ec [1/2] SystemUI: Network speed indicator (Squshed)
-91ab18d Show carrier label / custom & change color [1/2]
-578b754 Revert toast anim/network traffic indicator
-
-   * packages/apps/Settings/
-e163acc fix carrier label fc on msim
-27f35f9 Fix empty carrier label options on msim devices
-72946e8 change network traffic from check box to switch
-99c6e5f fix derp in network traffic color
-defb79c NetworkTraffic: Show/hide arrows (2/2)
-3886c7f NetworkTraffic: Append prefix 'net' to attribute names
-7a08bfd Settings: network traffic color option (2/2)
-9956599 Settings: network traffic meter
-93c24aa Show carrier label / custom & change color [2/2]
-0bf53e1 Revert "Add network traffic indicator (part 2)"
-f13a490 Revert toast animations & network traffic indicator
-
-   * vendor/slim/
-3b56081 slim : move profile service_contexts to vendor
-
-====================
-     07-30-2015
-====================
-
-   * build/
-d7b1578 arm64: Enable Cortex A53 Errata 843419, 835769 ldflags
-1c8ec62 AArch64: Addressing Cortex-A53 erratum 835769
-823d428 Revert "Disable -mcpu=cortex-a15 flag for krait"
-cf041f0 build: Fix device detection for a few of the envsetup commands
-1094659 build: Fix image creation for F2FS-only configuration
-b736e5a Add support for LZMA in blockimgdiff
-af2024a definitions.mk: look for definitions.mk in device/*/build also
-b871ba5 minnow_max: search for cm.mk in additional directories
-ca70e2d otasigcheck: Extract the key
-fd2e1d9 build: Add the factorypackage target
-6656e49 build: Unset JAVA_TOOL_OPTIONS to read java version
-774002f build: Add IGNORE_SUBDIR to clear vars.
-2dd43e2 build/core: Create means of ignoring subdir layer for packages.
-4dad4e1 kernel: Fix kernelconfig build
-
-   * frameworks/base/
-9b612c0 Add toast animation 1/2
-19702c4 Revert "Add toast animation 1/2"
-998adde Add toast animation 1/2
-8d441a5 Slim Global Menu (1/2)
-3eafb45 Add network traffic indicator
-e26746b camera: Unbreak the extended face detection code
-20c35bc Allow sending vendor- or device-specific commands to the camera HAL.
-a1a7718 ActivityManagerService: Don't export 'system' process in running app list
-a3cda75 DO NOT MERGE Fix JNI global references leak in AudioEffect
-f99e7a0 backup: Fix a system server crash
-6bfb3f6 Avoid ANR loop because of queued-up ANR runnables
-
-   * packages/apps/Settings/
-5c58225 Derp
-1f6b4cd Slim Global Menu (2/2)
-be87ea9 Merge branch 'lp5.1' of github.com:ROM-Jeremy/packages_apps_Settings-1 into lp5.1
-2f5778e Add toast animation 2/2
-a44a224 Derp
-ba462e9 Add network traffic indicator (part 2)
-bfc9d55 Development settings: Remove icon from root dialog
-
-   * platform_manifest/
-156ab78 Manifest: Underp new prebuilts toolchains
-
-   * vendor/slim/
-eb3560a Merge pull request #4 from SlimRoms/lp5.1
-
-====================
-     07-29-2015
-====================
-
-   * external/bluetooth/bluedroid/
-3d063ce Fix compile error in btif_rfcomm due to invalid comparison
-
-   * external/jpeg/
-f413ec3 Enable neon optimization for 32bits.
-
-   * external/sepolicy/
-c37637c sepolicy: Remove profiles from context, moved to slim
-
-   * frameworks/webview/
-d8604c2 Merge pull request #1 from ResurrectionRemix/cm-12.1
-0253727 Upgrade WebView to version 44.0.2403.90
-
-   * packages/apps/AudioFX/
-71668ce Automatic translation import
-
-   * packages/apps/Bluetooth/
-6cb69d2 Automatic translation import
-864879f Automatic translation import
-
-   * platform_manifest/
-6245f91 slim : use forks of aarch64 gcc for x86 and darwin for A53 erata workarounds.
-
-   * system/core/
-ac45a5b slim : fix mismerge
-6d13f15 init: Add a "starting" state for services
-
-   * vendor/slim/
-f194ee6 Bump to 0.3
-
-====================
-     07-28-2015
-====================
+c17547c Let's add back these overlays for now
 
    * device/qcom/common/
-75f0197 power: Additional changes for 8994
-
-   * frameworks/av/
-facd7cc libstagefright: Fix LPA default min duration
-4709154 audiopolicy: Fix DTS Eagle dependence on kernel
-7877472 cameraservice: Resolve message vs start/stop preview races
-028eef4 camera: add ability for a device to specify MAX_CAMERAS
+a1d7228 Adding init for msm8909
 
    * frameworks/base/
-a1fd383 Merge pull request #6 from SlimRoms/lp5.1
-acdb633 Fingerprint: Make the existing FingerprintService semi-useful.
-e75e47a fingerprint: register correct function for nativeEnrollCancel
-7e7d391 fingerprint: detach java vm in HAL callback
-dd43a88 Merge "Fingerprint: Make the existing FingerprintService semi-useful." into lp5.1
-fb7e676 Merge "fingerprint: register correct function for nativeEnrollCancel" into lp5.1
-ab9dc3e Merge "fingerprint: detach java vm in HAL callback" into lp5.1
-5470c0e Hide msim 'no-sim' icons
-eeb5747 SystemUI: hide navigation bar faster in SetupWizard
-7b160b9 ambient display: Fix volume key music control
-9e0c785 Fix volume key music controls and wake up
-0d3b852 fix Notification volume slider linking
-8da07d8 frameworks: read VOLUME_LINK_NOTIFICATION from proper table
-7d2ba3a Implement linked volumes and add upgrade path.
-fa35864 SystemUI: Create expandable volume panel.
-e85552a SystemUI: allow recent tasks to draw behind the status bar
-1b806ea SystemUI: Use smaller battery padding
-701acc0 Add music tile (1/2)
-815c5f7 Revert "Revert "SystemUI: Speed up and clean tests (squash)""
-e99e377 Revert "SystemUI: Speed up and clean tests (squash)"
-09d2987 core: Materialize text select handle
-689f97c Fix battery bar on nav for tablets and phones
-3a17cbe Fix batteryBar on Navbar
-9391587 Battery Bar [1/2]
-c879ff4 DocumentsUI: Add navigation bar color
-525d7fb New DocumentsUI icon
-dfd66fd DocumentsUI: RU translations
-279e4fa DocumentsUI: CA translations
-99c78ad Replaced custom strings with Android defaults
-bd76e13 DocumentsUI: DE-Translation (add custom strings)
-04a854e DocumentsUI: FR translation
-2664bb0 DocumentsUI: IT strings
-97bd181 frameworks/Documents: ES translations
-a470de7 DocumentsUI: fix recursive delete
-2319ce2 DocumentsUI: catch berserk apps on building recents
-6c21e5b base: DocumentUI: fix a few issues handling remote content
-b66c6d5 DocumentsUI: Remove catch-all statements
-8a97af3 DocumentsUI: Allow open files instead of URIs
-2a3f3ed Fix Icon size in DocumentsUI
-6f03e13 DocumentsUI: Add a standalone File Manager
-0ad31ab MediaScanner: Add support for default ringtones per sim
-13b95f9 MediaPlayer: Add multi SIM ringtone support
-
-   * frameworks/native/
-909ed2c Revert "Add OMX_AUDIO_CodingAPE and OMX_AUDIO_CodingDTS"
-
-   * hardware/qcom/audio-caf/msm8974/
-4d3422f hal: Add support for Samsung dual-SIM implementation
-d8219b7 compress offload: use new sample rate representation.
-
-   * hardware/qcom/display-caf/msm8974/
-e6f2237 Merge remote-tracking branch 'cm/cm-12.1-caf-8974' into HEAD
-
-   * hardware/qcom/media-caf/msm8974/
-e6f771e Merge remote-tracking branch 'cm/cm-12.1-caf-8974' into HEAD
+5f6d347 Fix WallpaperCropper crash when setting wallpaper over 8MB
+0bfb0e7 [1/2] Slim Recent App Sidebar
 
    * packages/apps/Settings/
-db27f83 fix msim network
-37987e3 Fix ***ing msim
-7c5c66f Fix ***ing msim
-b4b4dd6 Add music tile (2/2)
-2e2f030 move battery bar in status bar settings
-b3edb42 Battery Bar [2/2]
-b6880ac move battery bar in status bar settings
-e171548 Fix build: cellular drawable dupe
-3b9e9b6 fix derp in msim commit
-97a6a20 Settings: fix custom SIM name lost on reboot
-84c82d3 Settings: Restore proper ringtone for msim
-3765ee4 MSIM : Show a proper text if no number is set
-e461757 Sim: fix null pointer exception if no sim is inserted
-23d56a2 Port over MSIM UX improvements from cm-12.0.
-af3704c Re-add SIM color settings.
-a42af33 Fix data usage tab titles for MSIM.
-49e34cf settings: Fix MR1 compilation issues
-91b73a8 Settings: theme mobile network settings from data usage screen
-3bfbfdc Fix mobile network settings for multi sim (2/2)
-7eeb1a4 Do not show phone-related stuff if there's no subs
-5765c8d MSIM: use index as tab key
-2c59ac0 MSIM - SIM card status: name "SUB x" now "SIM x"
-e4cf8f8 MSIM: Data Usage: data connection switch visibility
-52ca605 MSIM: Data Usage: use the SIM name if available
-f5e029f Settings: msim - update dialogs
-02effba Settings: fix "Mobile Networks" menu option in DataUsageSummary.
-6148b5a MSIM: behave as single SIM when appropriate
-36d59a8 Settings: fix MSim package names
-3d266c7 Settings: Show Baseband version on MSIM devices
+7c7a32f Settings: fix mobile network switch being unchecked
+b2abee0 [2/2] Slim Recent App Sidebar
+
+   * packages/apps/SlimLauncher/
+a9e644a Merge branch 'lp5.1' of github.com:ROM-Jeremy/packages_apps_SlimLauncher into HEAD
+9449826 Fix setApplicationContext being called twice
+2116193 Some cleanup in IconPackHelper
+681fdbc Start cleanup
+90ee201 Cleanup imports
+c732bd1 Add haptic feedback to all apps shortcut
 
    * packages/apps/SoundRecorder/
-bf8552d Merge branch 'remote' into mkl-mr1
-2a7499b Automatic translation import
+27f88f0 Automatic translation import
 
    * platform_manifest/
-d8ebc8e Manifest : Add qcom hardware repo's for 8994
+5606e70 Track SlimLauncher locally, and switch to 5.1.1_r10
 
    * system/core/
-deb530e Merge pull request #1 from SlimRoms/lp5.1
-
-   * vendor/slim/
-dcd2a83 Merge pull request #3 from SlimRoms/lp5.1
-5879b2f Merge "cm: Update properties and libs for stagefright-plugins" into lp5.1
-6d6affa Merge "slim: Add some app-specific performance settings" into lp5.1
+04e609d Revert "fs_mgr: let fsck.f2fs actually attempt a fix"
 
 ====================
-     07-26-2015
-====================
-
-   * frameworks/base/
-43a483d SystemUI: Add option to disable search bar in recents (2/2)
-03b14f2 Recents: Fix 'clear all' button bottom position not working
-1d422e6 [Base]: recents panel clear all button tweaks
-24c0c15 Align recents clear button to screen edge instead of tasks if close
-682db64 systemui: animate clear recents button on exit animation
-cfaffbf systemui: adjust position of clear recents button
-4c0fe30 systemui: animate clear recents exit
-cb3e078 Revert "systemui: animate clear recents button on exit animation"
-796676c FW_Base - Live Volume Steps [1/2]
-
-   * packages/apps/Settings/
-e4935e4 Fix build
-c2d958e Revert "Settings: add "Show weather" toggle for quick settings panel"
-2166a45 RecentSettings: Move screen pinning from security settings to recents settings
-47642df RecentSettings: Update stock recent settings according to SlimRecents switch
-53156bd Settings: Add option to disable search bar in recents (1/2)
-ab32036 [Settings]: recents panel clear all button tweaks
-8f6b1dc Settings: add "Show weather" toggle for quick settings panel
-4058796 Settings: add setting for default alarm tone
-3349a85 Settings: Materialize standard colors in colorpicker
-6a551ac Settings: Lets remove Performance tab tile if no overlays are set
-5df63e4 Settings: Added choice of 45 seconds for screen timeout, lock screen and dream.
-8816126  Settings - Live Volume Steps [2/2]
-f37b05c Do not include all resource densities
-
-====================
-     07-25-2015
-====================
-
-   * frameworks/base/
-e78f27e System Animations Toggle (1/2)
-1f499d6 Guard in short-circuit evaluations for stringSplit methods.
-fe53fb8 TaskManager: Fix some spelling errors
-4f70435 TaskManager: Update some functions
-7eca129 Use 24dip of height for statusbar - M style
-adaa031 Disable Slim recents by default
-4842a8f AAPT: STFU-BBQ
-a65eadc ActivityThread, shut the density up!
-
-   * packages/apps/Settings/
-6d5a8e5 Enable Access to Appops Menu
-971505f System Animations Toggle (2/2)
-03e9d27 settings: Anti-Piracy Support [1/2]
-79ab569 SlimRecents: Set topmost task to ON
-
-   * vendor/slim/
-897cef3 Remove Eleven---Add VanillaMusic
-
-====================
-     07-24-2015
-====================
-
-   * frameworks/base/
-1f499d6 Guard in short-circuit evaluations for stringSplit methods.
-fe53fb8 TaskManager: Fix some spelling errors
-4f70435 TaskManager: Update some functions
-7eca129 Use 24dip of height for statusbar - M style
-adaa031 Disable Slim recents by default
-4842a8f AAPT: STFU-BBQ
-a65eadc ActivityThread, shut the density up!
-
-   * packages/apps/Settings/
-03e9d27 settings: Anti-Piracy Support [1/2]
-79ab569 SlimRecents: Set topmost task to ON
-
-   * packages/services/AntiPiracy/
-4ea5a4c Merge pull request #3 from Tsunamical/patch-1
-e0f8fef Block Game Hacker
-b756ffc Add creehack block
-94fafa9 Use generic Android.mk for now
-c783f65 Make sure we don't run the service if we can't reflect
-54ca837 Add GetApk Market
-4f16b6d add All-in-one downloader
-99786a4 Merge pull request #2 from rogersb11/master
-3d3b14d Add freedom app block support
-0efcdd2 Merge pull request #1 from DHOMD/patch-1
-e98f9fd OCD: clean up temp files.
-
-   * vendor/slim/
-897cef3 Remove Eleven---Add VanillaMusic
-
-====================
-     07-23-2015
-====================
-
-   * build/
-39da429 Back to -O2
-aac44a9 Goodbye overly aggressive compilation flags
-
-
-====================
-     07-22-2015
+     08-31-2015
 ====================
 
 
-   * build/
-bf9704f Some more optimization
-b93b819 Merge branch 'lp5.1' of github.com:ROM-Jeremy/android_build-1 into HEAD
-fed590a Slim up sounds and update (2/2)
-7476ce7 Merge pull request #3 from akhilnarang/lp5.1
-
-   * device/lge/w7/
-6b0cc6c Enable dark theme in OTA app
-
-   * frameworks/base/
-9bbad53 Revert "Add one-click on/off to cellular QS tile"
-cf5d853 Add one-click on/off to cellular QS tile
-d027b58 Revert sucks at its job somtimes!
-e1b799b Revert "SystemUI: add visualizer to lock screen"
-1710bb2 Revert "SystemUI: allow lock screen visualizer to be disabled"
-089a3d4 Revert "keyguard: don't use eq visualized in LowEndGfx devices"
-d6f39dc Revert "SystemUI: disable visualizers during power save mode"
-8b939d8 Revert "Lockscreen visualizer: Disable out animation"
-d430a07 Revert "systemui: don't start-stop visualizer directly after a power save event"
-6f81bb1 Revert "SystemUI: move keyguard visualizer behind notifications"
-67dcd45 Revert "SystemUI: fix visualizer tile initial state"
-67221dc Revert "VisualizerTile: Fix compile error"
-dc413e3 Revert "SystemUI: improve visualier tile state management"
-022d74f Revert "SystemUI: visualizer state improvements"
-08bc96b Revert "SystemUI: workaround for visualizer flash on track change"
-7c36b51 Revert "VisualizerTile: Launch music player on long press"
-8c13849 Revert "SystemUI: be more event driven in keyguard visualizer"
-133e7d3 Revert "SystemUI: recalculate clock position on removing empty shade views"
-49201de Revert "SystemUI: don't launch visualizer before we are attached"
-
-   * packages/apps/AudioFX/
-4cefeb9 New Material icon
-
-   * packages/apps/Settings/
-6bcdb80 Revert "Intergrate Viper4Android into settings"
-d07355d Revert "Launch SuperSU from Settings"
-416e32d Revert "Fix that up"
-ca54697 Revert "Settings: allow lock screen visualizer to be disabled"
+   * packages/apps/Mms/
+ad119e6 Automatic translation import
 
 ====================
-     07-21-2015
+     08-30-2015
 ====================
 
 
-   * art/
-223a2e3 Revert "Avoid using dex cache array pointers in libart."
-
-   * build/
-7f1eb4b Merge tag 'android-5.1.1_r8' into HEAD
-dd17f56 Let's optimize this a little bit
-a2b2da0 How did that sneak in there? lol
-afdd7cc Create 0 compression ratio jar files
-8d19039 Remove "-g" globally
-50e2829 host: Allow more arch flexibility
-4442e50 clang: Introduce and guard some optimization flags
-
-   * frameworks/base/
-74c3e20 Let's add some art to initial boot dialog
-aa984f6 Revert "frameworks: add keyguard wallpaper functionality to WallpaperManager"
-e4ded87 Fix build
-6ba08c3 frameworks: add keyguard wallpaper functionality to WallpaperManager
-af1f3d1 SlimDim: Use semaphore to cancel ontouch callback
-
-   * frameworks/opt/telephony/
-1dc01d5 CdmaLteServiceStateTracker: allow forcing reading eri from xml
-e659516 Merge "Update GSM/CDMA getState API to consider state of the IMS phone as well." into lp5.1
-183efc4 Merge "Send SMS over 1x when on eHRPD/LTE and active voice call" into lp5.1
-f381725 Merge "Generate transaction Ids for RetrieveConf - This is required to be able to backup and restore received MMS" into lp5.1
-
-   * libcore/
-417ad09 Revert "Avoid using dex cache array pointers in libart."
-
-   * packages/apps/Dialer/
-0efe8b3 Merge pull request #1 from SlimRoms/lp5.1
-
-   * packages/apps/InCallUI/
-e8c289e Merge pull request #1 from SlimRoms/lp5.1
-
-   * packages/apps/Settings/
-d85bb66 Revert "SecuritySettings: Lockscreen wallpaper"
-59ebe6a Revert "Cleanup."
-83cb9f2 SecuritySettings: Lockscreen wallpaper
-
-   * prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9/
-c0371ef Update gold to build #2098274.
-
-   * vendor/slim/
-d1d25cd Merge branch 'lp5.1' of github.com:ROM-Jeremy/vendor_slim into HEAD
-a386661 Update Kernel Adiutor
-5f73b92 No longer needed
-4f55636 Add WallpaperPicker
-
-====================
-     07-20-2015
-====================
-
-
-   * build/
-0208d97 Revert "Don't warn on definition of possibly reserved identifiers."
-2536b17 Revert "Use -Wno-format-pedantic to disable overly aggressive format string warning."
-0ba457a Drop the support for camera2
-569384d tools:ota:don't mount system partition with recovery mount options
-6df8317 build: Changed Some Colors
-8188d92 Remove Email/Exchange
-d14c16a Use -Wno-format-pedantic to disable overly aggressive format string warning.
-6133678 Don't warn on definition of possibly reserved identifiers.
-6dfac97 UBER KEYS
-ab848a3 Remove MOAR Bloat
-f3e17d4 Remove 2nd cpu nonsense
-6650dac Do Not Build Recovery Or Use it
-95719b0 Add Toolchain Version to Lunch Menu
-254427b Lollipop Audio Only
-ba33efb Remove Default Combos
-0410355 Kill some log spam
-6760197 Remove libdvm dex preopt support.
-142a48d Merge pull request #2 from akhilnarang/lp5.1
-5f204b4 Add SuperSU to UberSlim [2/2] Thanks to chinfire's "How to SU" guide, I've managed to get SuperSU zip flashing on every rom flash and it can easily be updated in vendor_slim
-
-   * kernel/lge/msm8226/
-a606995 Bring back fix for 4.9
-
-   * packages/apps/AudioFX/
-b6c0c17 I hated that icon lol
-
-   * packages/apps/Settings/
-dc27f8a Fix that up
-5847435 Merge pull request #3 from akhilnarang/lp5.1
-4b560ee Launch SuperSU from Settings
-
-   * vendor/slim/
-1d1742c Add prebuilt OpenCamera
-c043261 Merge pull request #2 from akhilnarang/lp5.1
-0e4760c update prebuilt
-f318b11 uberslim: SuperSU
-
-====================
-     07-19-2015
-====================
-
-
-   * art/
-7baa208 Revert "Support map data in the backtrace data structure."
-df3ab0b Delete missed ClampGrowthLimit CHECK
-8aba1d2 Improve dalvik cache pruning
-8c43cdc libart: Force GCC 4.8 on ARM.
-cc21122 Fix concurrent GC ergonomics
-3fb1618 Fix race with Heap::ClampGrowthLimit and GC
-6bdb98e Avoid using dex cache array pointers in libart.
-6f22ffe Add clamp growth limit
-ac1ee0f Move GC daemon locking logic into heap
-2e10c46 Support map data in the backtrace data structure.
-03a8413 Disable Clang as Host Compiler
-a76e022 Fix CC collector boot.
-f44ee10 Fix interpreter to allow 0 size sparse switches.
-bb4494b ART: Fix missing Erase() in error case
-19a60c0 Remove Improper Flag
-b2ac1e2 Add Non-debug cflags to debug cflags
-a2e9771 Remove dex2oat watchdog warning
-e485546 Guard against name == null in ShortDump
-1e3e95b Fix possible null deference in Throwable::Dump
-1ba7c2c Fix compaction unsafe DescribeWait
-
-   * build/
-17ba8e8 Moving back to UBERTC 4.9
-
-   * frameworks/base/
-6a19f87 SlimDim: don't dim navbar on lockscreen
-0a3fa3f Automatic translation import
-
-   * packages/apps/Eleven/
-1cd8c8d Automatic translation import
-
-   * packages/apps/Settings/
-aab233a Automatic translation import
-
-====================
-     07-18-2015
-====================
-
-   * build/
-ef3ecc0 build: avoid recovery patch if device setup can't do it correctly
-56d0d77 envsetup: repolastsync
-47db8db tools:releasetools:Use timestamp from build.prop while building system.img
-4f45f65 Let's make this look a little better
-
-   * frameworks/base/
-85735f5 livedisplay: Fix issue where settings weren't applied
-8d2c46b Revert CAF's default system sound settings
-33eef58 livedisplay: Round values up
-c3ce089 SystemUI: SlimDim - pref to listen on entire screen for touches [1/2]
-f95aa08 SlimDim: listen for touches in navbar empty areas also
-b5b90d0 SystemUI: SlimDim [1/2]
-ed2fbde Revert "SystemUI: SlimDim [1/2]"
-
-   * packages/apps/Settings/
-eed5d7b Display UberSlim version in settings
-e284027 settings: Fix livedisplay settings
-68459bd Fix config_proximityCheckOnWake setting handling
-6153bd2 Settings: SlimDim - pref to listen on entire screen for touches [2/2]
-dac176b Settings: SlimDim  [2/2]
-0b1adf1 Revert "Settings: SlimDim  [2/2]"
-689d43c Settings: add expanded desktop navbar action
-ac1ec7e Add button in "hidden" settings to flip "VoLTE Provisioned" flag
-
-   * packages/services/Telephony/
-bd1d7fa Merge "Fix missed calls notifications not shown after you call someone" into lp5.1
-
-   * vendor/slim/
-7350747 Merge pull request #1 from SlimRoms/lp5.1
-
-====================
-     07-17-2015
-====================
-
-   * build/
-8522873 Had to temporarily change ASCII art
-
-   * device/lge/w7/
-1ed4696 Enable proximity check on wake
-
-   * frameworks/base/
-7aaa821 Fix build
-6c18d9a Settings: Forward Port Volume Long Press Skip Tracks (1/2)
-
-   * packages/apps/Settings/
-077c6ac Settings: Forward Port Volume Long Press Skip Tracks (2/2)
-7ae12c2 Remove quick boot
-fe09774 Disable mobile plan under wireless networks aka more
-e6b387a Add fastscroll to the Manage applications screen
-f62628c Open app when clicking on icon in App Info screen
-333ed58 Remove taps to become a developer
-f1167f5 Let's enable developer options by default
-
-   * system/core/
-3dae6cf init: force SELinux to be permissive on all builds
-
-   * vendor/slim/
-0ce3bf9 Bump version
-
-====================
-     07-16-2015
-====================
-
-   * build/
-71e63e1 Add some art :-)
-
-   * device/lge/w7/
-91d2462 Add overlay for per-app performance profiles
-
-   * frameworks/base/
-cd05c61 SystemUI: SlimDim [1/2]
-
-   * packages/apps/Settings/
-d7539b4 Settings: SlimDim  [2/2]
-
-   * prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/
-e58e628 7-15-15
-
-   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8/
-507070a 7-15-15
-
-   * vendor/slim/
-9c1a428 Merge "Add titan" into lp5.1
-
-====================
-     07-15-2015
-====================
-
-   * system/extras/su/
-f854815 su: allow init to automatically restart daemon
-
-====================
-     07-14-2015
-====================
-
-   * build/
-5905c27 Allow prebuilt apk files
-
-   * device/lge/w7/
-116ea8b Update OTA properties
-
-   * frameworks/webview/
-88e527c Oops, that snuck in there on me
-473b0f6 Update WebView from 43.0.2357.121 to 44.0.2403.83
-
-   * packages/apps/Eleven/
-39dc0b6 eleven: fix invalid srt formats
-
-   * packages/apps/KernelAdiutor/
-222112d Bump version to 0.9.6
-0e5eed1 Fix compile error
-12a75f1 Fix formatting
-fea4da2 Add support for LG G3
-d612221 Add transition animation in downloads
-040872a Don't online CPU to read out cpufreq
-a555544 NPE rekt me
-ea45792 version 0.9.6
-7939a66 Add Entropy settings
-c444d3c Add per core support for cpu boost input freq
-afa5429 version 0.9.5.1.1 beta
-d042a49 Fix background when dark theme is used
-64e86f1 Import Translations from crowdin
-0919253 Init.d: Add edit, delete and new options also new icons
-8e4946a Use HttpURLConnection to read websites
-933c15e Some FC fixes
-fee9acf FrequencyTable: Fix additional card and set permission for init.d
-184a5cf Fix derp on non big.LITTLE devices
-3036ae5 Fix derp
-683206e version 0.9.5.1 beta
-25b1ed4 Import translations from crowdin
-8d7374b Add big.LITTLE support
-86bb95c Some clean up
-edc08d6 Boot/Recovery path of HMP exynos devices
-efd8353 Add some copyright notes in CpuSpy
-09a7563 Fix formating in JSON files
-9b9ada4 Add big.LITTLE support in frequency table
-1d6295c Fix governor tunables on HMP exynos devices
-a76df45 Make sure we read the right cpu temp file
-9436279 fix derp
-64f17e3 add support for android one and oneplus one
-182552c Create sprout.json
-d869a02 Create oneplusone.json
-f7c625d Create nexus5.json
-ef9f1bf Add support for nexus 5
-27196b8 Import translations from crowdin Add a link to download wiki in README
-c62b2ed version 0.9.5
-d6b1b83 Add extra_free_kbytes
-22aba0e DT2W for Nexus 9
-21615df Format celsius properly
-f7697ec Add custom downloads.json support and minor bug fixes
-65ca6e5 Introducing Kernel downloader An option to download third party kernels from developers. This works with JSON files. Kernel developers have to maintain their JSON database and keep them up to date. I will write up a documentation, so people can easily add support for their kernel.
-
-   * packages/apps/Settings/
-3fa2b9a Derp
-
-   * vendor/slim/
-c3b128a Bring in prebuilts
-5ca69eb Remove CMFileManager
-
-====================
-     07-13-2015
-====================
-
-   * build/
-f8ee153 Merge pull request #1 from SlimRoms/lp5.1
-
-   * frameworks/base/
-1d1a84c Lets round the corners of Recents windows a bit.
-e23fbee Clean up keyguard carrier text handling.
-204437b SystemUI: Show operator name UI after getting valid operator name
-48d1b26 DO NOT MERGE Don't take flags when creating app widget config activity.
-ee2b255 Make Bitmap_createFromParcel check the color count. DO NOT MERGE
-34d2ecc Do not paint shadow if outside of the clip area
-530563b Add Asset management support for fonts.
-9509918 Mark persistent apps as such when the ProcessRecord is created
-8079406 PowerManagerService: fix line to long after 64 bit compatibility changes
-fe509f3 PowerManagerService: Fix arm64 build
-5a5cef1 perf: Per-app performance profiles
-10ded4b Revert "Properly animate SIM PIN entry screen transition."
-
-   * packages/apps/Dialer/
-b383317 Layers 2.1 (backwards compatible)
-
-   * packages/apps/Eleven/
-0481caf Automatic translation import
-
-   * packages/apps/InCallUI/
-ee9d8ee Layers 2.1 (backwards compatible)
-
-   * packages/apps/Settings/
-6c9ea43 Slim : Stripped down performance profiles Settings from CM
-664cef6 Settings: change "doze" to "ambient display" to avoid confusion
-015e7c6 Add a 2 sec timeout for heads up notifications
-
-   * vendor/slim/
-b1fc3d6 Remove this for now
-bb28ea5 Add F-Droid/SoundRecorder/CMFileManager to build
-
-====================
-     07-12-2015
-====================
-
-   * device/lge/w7/
-e7b4fc4 We do not have a krait processor...lol
-
-   * platform_manifest/
-4c66c4e Manifest: Bump to r6
-
-====================
-     07-11-2015
-====================
-
-   * build/
-e5d3670 Revert "Add Chromium prebuilt and fixup device specific OUT dir [1/2]"
-3ac4bf6 Add PRODUCT_PACKAGES for Google's prebuilt WebView
-575815f "LMY48G"
-1047b2b "LMY48F"
-b728e1b "LMY48E"
-7d142e7 "LMY48D"
-c129b44 "LMY48C"
-c3b2b47 Really include drawables for all densities.
-
-   * frameworks/base/
-52a1f83 Add alternate WebView provider package
-
-   * packages/apps/Settings/
-8a983dd New Settings Logo!
-
-   * vendor/slim/
-5b536ee Revert "Add Chromium prebuilt and fixup device specific OUT dir [2/2]"
-
-====================
-     07-10-2015
-====================
+   * device/qcom/common/
+82f8e00 power: Enable 4+0 core config for display off cases
 
    * device/qcom/sepolicy/
-98d91d1 Seandroid: Add policy for dts configurator and notifier nodes
+751cdb8 sepolicy: Add thermal and irqbalancer sockets
+7fe993b sepolicy: Add policy for SurfaceFlinger access to rotator device
+6628472 SEAndroid: Allow SurfaceFlinger to access dynamic_fps node
 
-   * vendor/slim/
-bba7884 Got a pound beside me right now...
+   * frameworks/base/
+315a837 advanced reboot: add soft reboot option
+e16b495 Revert "RebootDialog: Bring back old confirmation"
+d7663e5 Revert "advanced reboot: add soft reboot option"
