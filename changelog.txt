@@ -1,4 +1,104 @@
 ====================
+     09-23-2015
+====================
+
+
+====================
+     09-22-2015
+====================
+
+
+   * device/lge/w7/
+0c879e8 More changes for default kernel settings
+
+   * kernel/lge/msm8226/
+c0e67cf Remove duplicate derp
+4935468 block, bfq: add Early Queue Merge (EQM) to BFQ-v7r8 for 3.4.0
+b103110 block: introduce the BFQ-v7r8 I/O sched for 3.4
+e8914cd block: cgroups, kconfig, build bits for BFQ-v7r8-3.4
+1363069 Revert "block: cgroups, kconfig, build bits for BFQ-v6r2-3.4"
+97b5166 Revert "block: introduce the BFQ-v6r2 I/O sched for 3.4"
+e01bd43 Revert "block, bfq: add Early Queue Merge (EQM) to BFQ-v6r2 for 3.4.0"
+
+====================
+     09-21-2015
+====================
+
+
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-4.9/
+6e72c11 9/20/15 - 4.9.4 UBERTC Snapshot
+
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/
+32f3943 9/20/2015 - 4.9.4 UBERTC Snapshot
+
+====================
+     09-20-2015
+====================
+
+
+   * device/lge/w7/
+4adabba Switch to deadline scheduler on boot
+
+   * frameworks/base/
+168b208 Use standard initializers
+1b7f025 Remove a bitrotted test.
+f7f31c5 Fix NPE in updateEmptyShadeView() upon screen rotation
+b0c441a Avoid NPE in printspooler when changing language
+e057a35 Allow Python Versions Higher than 2.6
+eebf059 SystemUI: add missing super viewgroup method calls
+c2fcfdc Slim navbar: fix SystemUI fc when hiding IME if a custom back button is set
+73f6755 Changed contextual notification panel headers
+31e3864 frameworks: remove redundant class ColorHelper
+
+   * kernel/lge/msm8226/
+7e6230b Revert "Linux 3.4.2"
+d7e012a Revert "Linux 3.4.3"
+e60d355 Revert "xhci: Reset reserved command ring TRBs on cleanup."
+9df1adb Revert "USB: fix resource leak in xhci power loss path"
+58e7ed9 Revert "Linux 3.4.4"
+b5139db Revert "drm/i915: Avoid a double-read of PCH_IIR during interrupt handling"
+06c734e Revert "smsusb: add autodetection support for USB ID 2040:c0a0"
+2914a09 Revert "Linux 3.4.5"
+12e918f Revert "Linux 3.4.6"
+d694863 Revert "Linux 3.4.7"
+3ba3dc2 Revert "Linux 3.4.8"
+5c8cb0e Revert "Linux 3.4.9"
+e72783f Revert "xHCI: keep track of ports being resumed and indicate in hub_status_data"
+1468e165 Revert "xhci: Add new short TX quirk for Fresco Logic host."
+79d7e48 Revert "USB: ftdi-sio: add support for Physik Instrumente E-861"
+00e9359 Revert "Linux 3.4.10"
+aa80d38 Revert "Linux 3.4.11"
+3d3d578 Revert "Linux 3.4.12"
+d03572e Revert "Linux 3.4.13"
+d2d8957 Revert "mm: mempolicy: Let vma_merge and vma_split handle vma->vm_policy linkages"
+bb185cb Revert "Linux 3.4.14"
+164a537 Revert "Interactive governor updates from nexus 5"
+
+   * packages/apps/Settings/
+7ebb434 route device info settings to msim.selectsubscription
+49a4925 Settings: remove wake device shortcut from slim action shortcuts
+f32c308 Settings: remove duplicate menu entry from slim action shortcuts
+1d4870d Settings: remove theme switch from slim action shortcuts
+
+   * platform_manifest/
+d952d23 We can track SlimLauncher from slim once again
+
+====================
+     09-19-2015
+====================
+
+
+====================
+     09-18-2015
+====================
+
+
+====================
+     09-17-2015
+====================
+
+
+====================
      09-12-2015
 ====================
 
