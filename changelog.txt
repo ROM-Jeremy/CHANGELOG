@@ -1,4 +1,54 @@
 ====================
+     10-10-2015
+====================
+
+
+   * build/
+1572c68 LMY48U
+
+   * device/lge/w7/
+19c7806 Change some default kernel settings
+
+   * frameworks/base/
+428c95a add config for proximity check on screen on default value
+
+   * kernel/lge/msm8226/
+310545d Update kernelsanders_defconfig
+
+   * packages/apps/InCallUI/
+152807c Adding missing touch feedback ripples for swap and hold conference buttons.
+
+   * platform_manifest/
+911a49f 5.1.1_r20
+
+   * system/core/
+3a29b80 Merge pull request #8 from SlimRoms/lp5.1
+
+====================
+     10-09-2015
+====================
+
+
+   * packages/apps/InCallUI/
+945f082 Use the highlight color instead of the tint color
+f660ae9 In Multi-SIM cases use the color of the SIM icon for InCallUI.
+
+====================
+     10-08-2015
+====================
+
+
+====================
+     10-07-2015
+====================
+
+
+====================
+     10-06-2015
+====================
+
+
+====================
      10-05-2015
 ====================
 
@@ -6,11 +56,58 @@
    * bionic/
 d449bf9 Merge pull request #1 from SlimRoms/lp5.1
 
+   * external/skia/
+397f8bb SkScaledBitmapSampler: fix memory overwritten
+
+   * frameworks/av/
+6937269 Revert "DO NOT MERGE: Lock drm plugin API calls globally, not per MediaDrm instance"
+e8da56d DO NOT MERGE - Fix software video decoder buffer size calculation
+48c2fb0 libstagefright: fix overflow in pvdec_api.cpp.
+dc6ad82 Revert "Fix compile after rI431aa2b7d30a942350ab6d105451c6b77e2f99d4"
+e673d6f libstagefright: check memory size for overflow before allocation.
+ead165d DO NOT MERGE: Lock drm plugin API calls globally, not per MediaDrm instance
+02a848e DO NOT MERGE - SoftwareRenderer: sanity check buffer size before copying data.
+d974fe9 libstagefright: check overflow before memory allocation in OMXCodec.cpp
+b41e812 Prevent integer issues in ID3::Iterator::findFrame
+4bdd33a DO NOT MERGE Part of fix for libmedia OOB write anywhere
+495738d libstagefright: fix overflow in MPEG4Source::parseSampleAuxiliaryInformationOffsets.
+f10ec32 Check RTSP payload length
+6a2c69e libstagefright: fix handling of mSampleTimeEntries and mNumSampleSizes in SampleTable.
+cfedf31 DO NOT MERGE - audio flinger: fix fuzz test crash
+01c2c9a Sanity check padding/delay values for gapless playback
+bf12683 SoftAVCEncoder: fix auto merge error, member names have changed.
+f24097d MatroskaExtractor: detect infinite loop when parsing NALs
+8b5e5c5 Fix for memory corruption in ID3::removeUnsynchronizationV2_4(). Bug: 23227354
+bf8e68d Fix compile failure after rI431aa2b7d30a942350ab6d105451c6b77e2f99d4
+e1cd320 MPEG4Source::fragmentedRead: check range before writing into buffers
+8f63423 Fix compile after rI431aa2b7d30a942350ab6d105451c6b77e2f99d4
+aa72e30 do not dequeue from native window after we hit fatal error -- DO NOT MERGE
+c610394 libstagefright: check remaining data size before parsing it.
+94f0b1e SoftAVCEnc: check requested memory size before allocation.
+c6199ca Check integer overflow to prevent memory corruption
+2008155 SoftOpus: Fix output buffer capacity.
+83ceccb Check buffer size before using it
+6132c25 Fix comparison sign warnings.
+f42c5af ABuffer: reset members when memory allocation fails.
+5709d4b Check vector size before accessing
+d1fb84b libstagefright: fix possible overflow in amrwbenc.
+9dd20dc libstagefright: fix possible overflow in ID3.
+4240525 Fix Ogg album art
+b91a0da Extra sanity checks on sample size and resolution
+fdb260d Fix crash on malformed id3
+1bcc954 DO NOT MERGE - IAudioFlinger: add checks on binder calls
+
    * frameworks/base/
 66a4ef5 Tether: add ipa tether stats to the existing design
 
    * system/core/
+08552a8 libutils: fix overflow in String8::allocFromUTF8
+99373d7 libutils: fix overflow in SharedBuffer [DO NOT MERGE]
+dc1eff0 Fix compile failure after rIfe1dc0791040150132bea6884f1e6c8d31972d1b
 f58d7c9 Merge pull request #7 from SlimRoms/lp5.1
+
+   * system/security/
+53aad98 Properly check for Blob max length
 
    * vendor/slim/
 07ae43b cm: Clean up cgroups even more!
@@ -28,59 +125,3 @@ b890187 Update HK APNs
 
    * hardware/qcom/display/
 cc53aaa hwc: Set ioprio for vsync thread
-
-====================
-     10-03-2015
-====================
-
-
-   * packages/apps/SlimLauncher/
-8cf9336 Fix force close with some icon packs
-
-====================
-     10-02-2015
-====================
-
-
-   * prebuilts/gcc/linux-x86/arm/arm-eabi-4.9/
-004516e 10/01/15 - 4.9.4 UBERTC Snapshot
-
-   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/
-3df2a0c 10/01/2015 - 4.9.4 UBERTC Snapshot
-
-====================
-     10-01-2015
-====================
-
-
-   * packages/apps/SoundRecorder/
-96c43c7 Merge branch 'remote' into mkl-mr1
-
-====================
-     09-30-2015
-====================
-
-
-   * art/
-0ffbb13 art: Increase the frame-size warning to make gcc 4.9 + intel happy
-deaea30 art: Fix whitespace errors added by caf
-
-   * packages/apps/SoundRecorder/
-9973e42 SoundRecorder: only primary storage volumes are writeable
-
-   * system/core/
-7b8055b fastboot: format f2fs partition instead of just erase
-93a337b fs_mgr: When formating f2fs volumes, respect the length parameter
-a6be5ba init.rc: drop world writable on cgroups to pass cts
-4991062 sysutils: Hush logging
-dcb5c64 Don't use global variable in libnetutils.
-0eb7547 IPA tether: support for netlink event from ipa
-
-====================
-     09-29-2015
-====================
-
-
-   * external/f2fs-tools/
-2a52f07 mkfs.f2fs: trim using BLKSECDISCARD
-
