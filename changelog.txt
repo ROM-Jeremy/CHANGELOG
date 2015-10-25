@@ -1,127 +1,48 @@
 ====================
-     10-10-2015
+     10-24-2015
 ====================
 
 
    * build/
-1572c68 LMY48U
+ea881c1 Set the Security Patch level with Oct 1 for LP
+3f2f5c5 Fix issie #23116383: Include security patch level in Settings
 
    * device/lge/w7/
-19c7806 Change some default kernel settings
+f4e87ce Merge branch 'lp5.1' of github.com:UberSlim/android_device_lg_w7ds into lp5.1
+1c074c7 Set correct permission for tcp delayed ack
+46cd3f8 Fix typo
+07b32f5 Move fws to correct dir, update venus. Probably it fix video enc/dec on D415
 
    * frameworks/base/
-428c95a add config for proximity check on screen on default value
+a139fd7 Changed contextual notification panel headers See images - http://i.imgur.com/PupEJ5p.jpg
+95adee2 Move "modern" custom header images to nodpi for ALL densities usage
+1d477c2 Move poly hd custom header images to nodpi for ALL densities usage
+7ffce07 SystemUI: Add option for "modern" custom headers (1/2)
+c24e0ec SystemUI: Add PAC's revamped contextual notification header images
+c354588 SystemUI: Add option for new poly hd custom headers (1/2)
+b39cde8 SystemUI: Add new HD poly effect contextual header images
+7aacdee [DO NOT MERGE] Bump up the timeout for uncrypt to 900s.
+873ffc3 DO NOT MERGE. Truncate and ellipsize app name if too long for dialog.
+ef8ccfd Allow debugging only for apps forked from zygote
 
    * kernel/lge/msm8226/
-310545d Update kernelsanders_defconfig
+47e74d9 tcp_cubic: do not set epoch_start in the future
+e2b1c63 tcp_cubic: better follow cubic curve after idle period
+f704b90 Merge branch 'lp5.1' of github.com:UberSlim/KernelSanders_L90 into lp5.1-new
+b997bef Hardcode atmel ts fws
+d236854 Revert "Revert this for know, it gave strange build errors"
+6e04d25 block: cfq: Tuning and burning
 
-   * packages/apps/InCallUI/
-152807c Adding missing touch feedback ripples for swap and hold conference buttons.
+   * packages/apps/Settings/
+a7e318f Settings: Add option for "modern" custom headers (2/2)
+36c5ef8 Settings: Custom header switch On-The-Fly
+d1b0935 Settings: Add option for new poly hd custom headers (2/2)
 
-   * platform_manifest/
-911a49f 5.1.1_r20
+   * bootable/recovery/
+0373eff Add support for RGBA_8888 pixel format
 
-   * system/core/
-3a29b80 Merge pull request #8 from SlimRoms/lp5.1
-
-====================
-     10-09-2015
-====================
-
-
-   * packages/apps/InCallUI/
-945f082 Use the highlight color instead of the tint color
-f660ae9 In Multi-SIM cases use the color of the SIM icon for InCallUI.
-
-====================
-     10-08-2015
-====================
-
-
-====================
-     10-07-2015
-====================
-
-
-====================
-     10-06-2015
-====================
-
-
-====================
-     10-05-2015
-====================
-
-
-   * bionic/
-d449bf9 Merge pull request #1 from SlimRoms/lp5.1
-
-   * external/skia/
-397f8bb SkScaledBitmapSampler: fix memory overwritten
-
-   * frameworks/av/
-6937269 Revert "DO NOT MERGE: Lock drm plugin API calls globally, not per MediaDrm instance"
-e8da56d DO NOT MERGE - Fix software video decoder buffer size calculation
-48c2fb0 libstagefright: fix overflow in pvdec_api.cpp.
-dc6ad82 Revert "Fix compile after rI431aa2b7d30a942350ab6d105451c6b77e2f99d4"
-e673d6f libstagefright: check memory size for overflow before allocation.
-ead165d DO NOT MERGE: Lock drm plugin API calls globally, not per MediaDrm instance
-02a848e DO NOT MERGE - SoftwareRenderer: sanity check buffer size before copying data.
-d974fe9 libstagefright: check overflow before memory allocation in OMXCodec.cpp
-b41e812 Prevent integer issues in ID3::Iterator::findFrame
-4bdd33a DO NOT MERGE Part of fix for libmedia OOB write anywhere
-495738d libstagefright: fix overflow in MPEG4Source::parseSampleAuxiliaryInformationOffsets.
-f10ec32 Check RTSP payload length
-6a2c69e libstagefright: fix handling of mSampleTimeEntries and mNumSampleSizes in SampleTable.
-cfedf31 DO NOT MERGE - audio flinger: fix fuzz test crash
-01c2c9a Sanity check padding/delay values for gapless playback
-bf12683 SoftAVCEncoder: fix auto merge error, member names have changed.
-f24097d MatroskaExtractor: detect infinite loop when parsing NALs
-8b5e5c5 Fix for memory corruption in ID3::removeUnsynchronizationV2_4(). Bug: 23227354
-bf8e68d Fix compile failure after rI431aa2b7d30a942350ab6d105451c6b77e2f99d4
-e1cd320 MPEG4Source::fragmentedRead: check range before writing into buffers
-8f63423 Fix compile after rI431aa2b7d30a942350ab6d105451c6b77e2f99d4
-aa72e30 do not dequeue from native window after we hit fatal error -- DO NOT MERGE
-c610394 libstagefright: check remaining data size before parsing it.
-94f0b1e SoftAVCEnc: check requested memory size before allocation.
-c6199ca Check integer overflow to prevent memory corruption
-2008155 SoftOpus: Fix output buffer capacity.
-83ceccb Check buffer size before using it
-6132c25 Fix comparison sign warnings.
-f42c5af ABuffer: reset members when memory allocation fails.
-5709d4b Check vector size before accessing
-d1fb84b libstagefright: fix possible overflow in amrwbenc.
-9dd20dc libstagefright: fix possible overflow in ID3.
-4240525 Fix Ogg album art
-b91a0da Extra sanity checks on sample size and resolution
-fdb260d Fix crash on malformed id3
-1bcc954 DO NOT MERGE - IAudioFlinger: add checks on binder calls
-
-   * frameworks/base/
-66a4ef5 Tether: add ipa tether stats to the existing design
-
-   * system/core/
-08552a8 libutils: fix overflow in String8::allocFromUTF8
-99373d7 libutils: fix overflow in SharedBuffer [DO NOT MERGE]
-dc1eff0 Fix compile failure after rIfe1dc0791040150132bea6884f1e6c8d31972d1b
-f58d7c9 Merge pull request #7 from SlimRoms/lp5.1
-
-   * system/security/
-53aad98 Properly check for Blob max length
-
-   * vendor/slim/
-07ae43b cm: Clean up cgroups even more!
-64bcfee cm: Clean up cgroups
-a395b77 cm: Remove xattr option from bfqio cgroup
-65a2ee7 cm: Set IOPS mode for CFQ and BFQ automatically
-1a6d9e5 cm: Set the IO scheduler based on a system property
-4c425cf cm: Create cgroups for BFQIO
-b890187 Update HK APNs
-
-====================
-     10-04-2015
-====================
-
-
-   * hardware/qcom/display/
-cc53aaa hwc: Set ioprio for vsync thread
+   * vendor/lge/
+94d06a6 Restore nfc fw
+f3747de Remove unused devices
+4daf2b5 Fix typo
+1c8887f Move fws to correct dir, update venus. Probably it fix video enc/dec on D415
